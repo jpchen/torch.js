@@ -1,0 +1,29 @@
+(From the email with Noah, Eli, and Paul)
+
+The code is in a pretty bad state in terms of readability and documentation, but if you and Daniel want to take a look at what Paul wrote I've attached a zip of the repository at a commit where basic functionality was mostly working.
+
+What Paul did is basically the following: automatically generate node-ffi bindings for libTH, the C tensor library Torch is built on, and used those low-level FFI bindings to build replacements for essentially all the methods and functions in ad's tensor.js.  This replacement backend for ad is in the file tensor.js in the root of the zipfile.  The methods should mostly work, or at least run without crashing, and should have mostly the same signatures as the functions in the original file.  However, I definitely wouldn't expect this to just work if you dropped it straight into existing ad test code.  Regarding CUDA support, if you look in the beginning of tensor.js, you can see that you can change the type of the backend between CPU float tensors and CUDA float tensors; right now it's set to CUDA tensors.  Most of the methods should therefore have CUDA support, including matrix multiplication (Tensor.dot).
+
+-------
+
+You'll need to install the dependencies in package.json as usual and then use cmake to build both libTH and libTHC.  You can see how libTH is built in the script remake_thlib.sh; the same process in there should work for cuTH/THC/whatever its real name is.  This will only work on a machine with CUDA.  Once you've built things, you can run test.js to see a few benchmarks.
+
+-------
+
+On the difference between this code and soumith's torch.js repo:
+
+"torch.js is just a tiny shell script that uses ffi-generate to automatically create node FFI bindings for every function in libTH, the C library that Torch is built on.  We took Soumith's idea/script and wrote code that translates those bindings into a backend for the ad/adnn Tensor object to see how hard it would be to turn the super low-level stuff into a human-usable tensor library and directly upgrade the webPPL internals to use Torch's fast tensor math without having to change any existing webPPL code.""
+
+-------
+
+On the motivation for having their own versions of libTH and libTHC:
+
+"I adjusted the CMake files for those projects. My intention was to eventually have the modified cmake files, any custom headers and source, and clone the existing repositories for building. I just never got that far.
+
+I also made some specific c and cuda math functions for replicating the different math functions and their derivatives found in adnn.
+
+This is one big tradeoff with binding to torch, you can't do the nice arbitrary string function definitions in JavaScript and get them to run on the GPU for free. You could imagine something that compiles string functions into cuda code that is automatically added to the cmake build, but it might be more effort than it's worth.
+
+The problem is that even though torch has an "apply" function to run a custom lua function on a tensor, it doesn't actually work for cuda tensors. It first makes a copy to CPU float, then applies to the tensor on CPU, then copies back to gpu. I could have replicated that process in JavaScript (in fact I think I did for testing), but the ffi passthrough between JavaScript and C is very expensive. It would be impractical and slow to do that in JavaScript for arbitrary math functions, so I made the specific c/cuda math functions (e.g. Softmax and others)."
+
+ --> dritchie note: I'm pretty sure that all of the functions they added (e.g. Softmax) and their derivatives are available in libTHNN, so we should generate bindings for that instead of making changes to libTH.

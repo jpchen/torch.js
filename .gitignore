@@ -1,0 +1,5 @@
+cuthlib/generated
+cuthlib/build
+thlib/build
+node_modules
+_good*
