@@ -342,7 +342,6 @@ benchmark(
    },
    cutt, cutt.clone()
 )
-
 benchmark(
    'webppl math',
    tensor_test,

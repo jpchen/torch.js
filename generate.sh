@@ -12,7 +12,7 @@ ffi-generate -f ./thlib/ccTH.h -l ./thlib/build/libmTH -L/Library/Developer/Comm
 # create the cuda bindings
 #ffi-generate -f ./cuthlib/ccTHC.h -l ./cuthlib/build/libmTHC -L /Library/Developer/CommandLineTools/usr/lib/ -L/usr/lib/ -m THC -p THC -s -- -I/usr/local/cuda/include -I./thlib -I./thlib/build -I./cuthlib -I./cuthlib/build > cuTH.js
 
-ffi-generate -f ./cuthlib/ccTHC.h -l ./cuthlib/build/libmTHC -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/ -m THC -p TH -s -- -I/usr/local/cuda/include -I./thlib -I./thlib/build -I./cuthlib -I./cuthlib/build > cuTH.js
+#ffi-generate -f ./cuthlib/ccTHC.h -l ./cuthlib/build/libmTHC -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/ -m THC -p TH -s -- -I/usr/local/cuda/include -I./thlib -I./thlib/build -I./cuthlib -I./cuthlib/build > cuTH.js
 
 # clean up the TH.js file
 node cleaner.js
