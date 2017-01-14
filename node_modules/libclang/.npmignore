@@ -1,0 +1,5 @@
+.lock-wscript
+build/
+libclang.node
+*.swp
+node_modules
