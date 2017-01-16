@@ -14,6 +14,9 @@ export DYLD_LIBRARY_PATH=[path to libTH.dylib]
 # for Linux 
 export LD_LIBRARY_PATH=[path to libTH.so]
 
+#run generate.sh
+sh generate.sh
+
 # run the test to see the magic happen
 node test.js
 ```
