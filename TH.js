@@ -3453,6 +3453,36 @@ exports.TH = new FFI.Library('libTH', {
   THFloatTensor_sizeDesc: [THDescBuff, [
     THFloatTensorPtr,
   ]],
+  THFloatTensor_size: [ref.types.long, [
+    THFloatTensorPtr,
+    ref.types.int32,
+  ]],
+  THFloatTensor_stride: [ref.types.long, [
+    THFloatTensorPtr,
+    ref.types.int32,
+  ]],
+  THFloatTensor_newSizeOf: [THLongStoragePtr, [
+    THFloatTensorPtr,
+  ]],
+  THFloatTensor_newStrideOf: [THLongStoragePtr, [
+    THFloatTensorPtr,
+  ]],
+  THFloatTensor_data: [ref.refType(ref.types.float), [
+    THFloatTensorPtr,
+  ]],
+  THFloatTensor_setFlag: [ref.types.void, [
+    THFloatTensorPtr,
+    ref.types.char,
+  ]],
+  THFloatTensor_clearFlag: [ref.types.void, [
+    THFloatTensorPtr,
+    ref.types.char,
+  ]],
+  THFloatTensor_new: [THFloatTensorPtr, [
+  ]],
+  THFloatTensor_newWithTensor: [THFloatTensorPtr, [
+    THFloatTensorPtr,
+  ]],
   THFile_isOpened: [ref.types.int32, [
     THFile,
   ]],
