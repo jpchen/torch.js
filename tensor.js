@@ -8,12 +8,12 @@ var ref =  require('ref')
 
 // this is the tensor backend
 // var THTensor = torch.THFloatTensor
-var THTensor = torch.THCudaTensor
-var THStorage = torch.THCudaStorage
-var THType = "CudaFloat"
-// var THTensor = torch.THFloatTensor
-// var THStorage = torch.THFloatStorage
-// var THType = "Float"
+//var THTensor = torch.THCudaTensor
+//var THStorage = torch.THCudaStorage
+//var THType = "CudaFloat"
+var THTensor = torch.THFloatTensor
+var THStorage = torch.THFloatStorage
+var THType = "Float"
 
 // // Can swap out different backing stores
 // function TypedArrayBackingStore(ArrayType) {

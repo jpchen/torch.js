@@ -1,5 +1,7 @@
 var ffith=require('./THc.js')
 var fficu=require('./cuTHc.js')
+//var ffith=require('./TH.js')
+//var fficu=require('./cuTH.js')
 
 // console.log('creating new 10-element tensor')
 // var tensor1=TH.THFloatTensor_newWithSize1d(10)
