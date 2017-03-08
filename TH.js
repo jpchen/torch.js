@@ -3464,6 +3464,245 @@ exports.TH = new FFI.Library('libTH', {
   THFloatTensor_newWithTensor: [THFloatTensorPtr, [
     THFloatTensorPtr,
   ]],
+  // THFloatTensor_dx_neg: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_add_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_acc_add_f1: [ref.types.float, [
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_add_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_acc_add_f2: [ref.types.float, [
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_sub_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_acc_sub_f1: [ref.types.float, [
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_sub_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_acc_sub_f2: [ref.types.float, [
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_mul_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_const_mul_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_acc_mul_f1: [ref.types.float, [
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_mul_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_const_mul_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_acc_mul_f2: [ref.types.float, [
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_div_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_const_div_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_acc_div_f1: [ref.types.float, [
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_div_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_const_div_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_acc_div_f2: [ref.types.float, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_sqrt: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_exp: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_log: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_pow_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_const_pow_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_acc_pow_f1: [ref.types.float, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_pow_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_const_pow_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_acc_pow_f2: [ref.types.float, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_sin: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_cos: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_tan: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_asin: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_acos: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_atan: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_atan2_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_const_atan2_f1: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_acc_atan2_f1: [ref.types.float, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_atan2_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_const_atan2_f2: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_acc_atan2_f2: [ref.types.float, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   ref.types.float,
+  // ]],
+  // THFloatTensor_dx_sinh: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_cosh: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_tanh: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_asinh: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_acosh: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_atanh: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
+  // THFloatTensor_dx_sigmoid: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  //   THFloatTensorPtr,
+  // ]],
   // THFloatTensor_fctapply: [ref.types.void, [
   //   THFloatTensorPtr,
   //   THFloatTensor_jscallback,
