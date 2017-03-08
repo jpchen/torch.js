@@ -8,6 +8,10 @@ var voidPtr = ref.refType(ref.types.void);
 exports.CONSTANTS = {
 };
 
+// var THFloatTensor_jscallback = exports.THFloatTensor_jscallback = FFI.Function(ref.types.float, [
+//   ref.types.float,
+// ]);
+// var THFloatTensor_jscallbackPtr = exports.THFloatTensor_jscallbackPtr = ref.refType(THFloatTensor_jscallback);
 var THErrorHandlerFunction = exports.THErrorHandlerFunction = FFI.Function(ref.types.void, [
   ref.types.CString,
   voidPtr,
@@ -2831,65 +2835,33 @@ exports.TH = new FFI.Library('libTH', {
     THGeneratorPtr,
     THLongStoragePtr,
   ]],
-  THFloatTensor_validXCorr2Dptr: [ref.types.void, [
-    ref.refType(ref.types.float),
-    ref.types.float,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
+  THFloatTensor_copy: [ref.types.void, [
+    THFloatTensorPtr,
+    THFloatTensorPtr,
   ]],
-  THFloatTensor_validConv2Dptr: [ref.types.void, [
-    ref.refType(ref.types.float),
-    ref.types.float,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
+  THFloatTensor_copyByte: [ref.types.void, [
+    THFloatTensorPtr,
+    voidPtr,
   ]],
-  THFloatTensor_fullXCorr2Dptr: [ref.types.void, [
-    ref.refType(ref.types.float),
-    ref.types.float,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
+  THFloatTensor_copyChar: [ref.types.void, [
+    THFloatTensorPtr,
+    voidPtr,
   ]],
-  THFloatTensor_fullConv2Dptr: [ref.types.void, [
-    ref.refType(ref.types.float),
-    ref.types.float,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
+  THFloatTensor_copyShort: [ref.types.void, [
+    THFloatTensorPtr,
+    voidPtr,
   ]],
-  THFloatTensor_validXCorr2DRevptr: [ref.types.void, [
-    ref.refType(ref.types.float),
-    ref.types.float,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.refType(ref.types.float),
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
+  THFloatTensor_copyInt: [ref.types.void, [
+    THFloatTensorPtr,
+    voidPtr,
+  ]],
+  THFloatTensor_copyLong: [ref.types.void, [
+    THFloatTensorPtr,
+    voidPtr,
+  ]],
+  THFloatTensor_copyFloat: [ref.types.void, [
+    THFloatTensorPtr,
+    voidPtr,
   ]],
   THFloatTensor_conv2DRevger: [ref.types.void, [
     THFloatTensorPtr,
@@ -3450,6 +3422,15 @@ exports.TH = new FFI.Library('libTH', {
   THFloatTensor_desc: [THDescBuff, [
     THFloatTensorPtr,
   ]],
+  THFloatTensor_storage: [THFloatStoragePtr, [
+    THFloatTensorPtr,
+  ]],
+  THFloatTensor_storageOffset: [ref.types.long, [
+    THFloatTensorPtr,
+  ]],
+  THFloatTensor_nDimension: [ref.types.int32, [
+    THFloatTensorPtr,
+  ]],
   THFloatTensor_sizeDesc: [THDescBuff, [
     THFloatTensorPtr,
   ]],
@@ -3482,6 +3463,107 @@ exports.TH = new FFI.Library('libTH', {
   ]],
   THFloatTensor_newWithTensor: [THFloatTensorPtr, [
     THFloatTensorPtr,
+  ]],
+  // THFloatTensor_fctapply: [ref.types.void, [
+  //   THFloatTensorPtr,
+  //   THFloatTensor_jscallback,
+  // ]],
+  THByteTensor_newWithSize: [THByteTensorPtr, [
+    THLongStoragePtr,
+    THLongStoragePtr,
+  ]],
+  THByteTensor_newWithSize1d: [THByteTensorPtr, [
+    ref.types.long,
+  ]],
+  THByteTensor_newWithSize2d: [THByteTensorPtr, [
+    ref.types.long,
+    ref.types.long,
+  ]],
+  THByteTensor_newWithSize3d: [THByteTensorPtr, [
+    ref.types.long,
+    ref.types.long,
+    ref.types.long,
+  ]],
+  THByteTensor_newWithSize4d: [THByteTensorPtr, [
+    ref.types.long,
+    ref.types.long,
+    ref.types.long,
+    ref.types.long,
+  ]],
+  THByteTensor_dot: [ref.types.long, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+  ]],
+  THByteTensor_minall: [ref.types.uchar, [
+    THByteTensorPtr,
+  ]],
+  THByteTensor_maxall: [ref.types.uchar, [
+    THByteTensorPtr,
+  ]],
+  THByteTensor_sumall: [ref.types.long, [
+    THByteTensorPtr,
+  ]],
+  THByteTensor_prodall: [ref.types.long, [
+    THByteTensorPtr,
+  ]],
+  // THByteTensor_neg: [ref.types.void, [
+  //   THByteTensorPtr,
+  //   THByteTensorPtr,
+  // ]],
+  THByteTensor_ltTensor: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    THByteTensorPtr,
+  ]],
+  THByteTensor_leTensor: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    THByteTensorPtr,
+  ]],
+  THByteTensor_gtTensor: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    THByteTensorPtr,
+  ]],
+  THByteTensor_geTensor: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    THByteTensorPtr,
+  ]],
+  THByteTensor_neTensor: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    THByteTensorPtr,
+  ]],
+  THByteTensor_eqTensor: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    THByteTensorPtr,
+  ]],
+  THByteTensor_add: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    ref.types.uchar,
+  ]],
+  THByteTensor_sub: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    ref.types.uchar,
+  ]],
+  THByteTensor_mul: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    ref.types.uchar,
+  ]],
+  THByteTensor_div: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    ref.types.uchar,
+  ]],
+  THByteTensor_fmod: [ref.types.void, [
+    THByteTensorPtr,
+    THByteTensorPtr,
+    ref.types.uchar,
   ]],
   THFile_isOpened: [ref.types.int32, [
     THFile,

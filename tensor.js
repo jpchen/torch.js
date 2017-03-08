@@ -7,11 +7,11 @@ var ffi = require('ffi')
 var ref =  require('ref')
 
 // this is the tensor backend
-// var THTensor = torch.THFloatTensor
-//var THTensor = torch.THCudaTensor
+// var THFloatTensor = torch.THFloatTensor
+//var THFloatTensor = torch.THCudaTensor
 //var THStorage = torch.THCudaStorage
 //var THType = "CudaFloat"
-var THTensor = torch.THFloatTensor
+var THFloatTensor = torch.THFloatTensor
 var THStorage = torch.THFloatStorage
 var THType = "Float"
 
@@ -118,7 +118,7 @@ var THType = "Float"
 // var c_readTensorStorageSizeStride = function(lua_State *L, int index, int allowNone, int allowTensor, int allowStorage, int allowStride,
 //                                                          THStorage **storage_, long *storageOffset_, THLongStorage **size_, THLongStorage **stride_)
 // {
-//   THTensor *src = NULL;
+//   THFloatTensor *src = NULL;
 //   THStorage *storage = NULL;
 
 //   int arg1Type = lua_type(L, index);
@@ -135,8 +135,8 @@ var THType = "Float"
 //   {
 //     *storage_ = src->storage;
 //     *storageOffset_ = src->storageOffset;
-//     *size_ = THTensor_(newSizeOf)(src);
-//     *stride_ = THTensor_(newStrideOf)(src);
+//     *size_ = THFloatTensor_(newSizeOf)(src);
+//     *stride_ = THFloatTensor_(newStrideOf)(src);
 //     return;
 //   }
 //   else if( allowStorage && (arg1Type == LUA_TUSERDATA) && (storage = luaT_toudata(L, index, torch_Storage)) )
@@ -239,7 +239,7 @@ function Tensor(dims)
 
   // console.log("tz sz: ", torch.THLongStorage.size(size.ref()))
   // console.log("tz sz: ", torch.THLongStorage.data(size.ref())[0])
-  // console.log("tz sz: ", torch.THLongStorage.data(size.ref())[1])
+  // console.log("tz sz:", torch.THLongStorage.data(size.ref())[1])
 
   // console.log("Sz: ", size)
   // console.log("Sz: d0", size.data[0])
@@ -251,33 +251,33 @@ function Tensor(dims)
   this.dims = dims;
   this.length = prod
 
-  // var tensor = THTensor.newWithSize1d(prod).deref();
-  var tensor = THTensor.newWithSize(size.ref(), ref.NULL).deref();
-  // var tensor = THTensor.newWithSize(size.ref(), ref.NULL).deref();
-  // console.log("ref size:1 ", THTensor.nElement(tensor.ref()))
+  // var tensor = THFloatTensor.newWithSize1d(prod).deref();
+  var tensor = THFloatTensor.newWithSize(size.ref(), ref.NULL).deref();
+  // var tensor = THFloatTensor.newWithSize(size.ref(), ref.NULL).deref();
+  // console.log("ref size:1 ", THFloatTensor.nElement(tensor.ref()))
   this.data = tensor;
   this.ref = this.data.ref()
 
   // all the same types for now. I'll fix this later
   this.type = THType;
-  this._tensor_object = THTensor;
+  this._tensor_object = THFloatTensor;
 
 
   // var size = arr_to_ls(dims)
 
-  // THTensor.resize(this.data.ref(), size.ref(), ref.NULL)
+  // THFloatTensor.resize(this.data.ref(), size.ref(), ref.NULL)
   // var ss = this.data.storage.deref()
 
-  // console.log("ref size:2 ", THTensor.nElement(tensor.ref()))
+  // console.log("ref size:2 ", THFloatTensor.nElement(tensor.ref()))
 
   // throw new Error()
 
   // THStorage.resize(ss.ref(), prod)
   // console.log(ss)
-  // console.log("Sizing info:", THTensor.newSizeOf(this.data.ref()).deref().data[0])
-  // THTensor.fill(this.data.ref(), .15)
+  // console.log("Sizing info:", THFloatTensor.newSizeOf(this.data.ref()).deref().data[0])
+  // THFloatTensor.fill(this.data.ref(), .15)
   // console.log("finisn fill")
-  // var dr = THTensor.storage(tensor.ref()).deref()
+  // var dr = THFloatTensor.storage(tensor.ref()).deref()
   // for(var i=0; i < dims.length; i++)
   // {
   //   THStorage.set(dr.ref(), si++, dims[i]);
@@ -300,7 +300,7 @@ function Tensor(dims)
   //  }
 
   //   // console.log("ds", this.data.size[0])
-  //   // THTensor.fill(this.data.ref(), .15)
+  //   // THFloatTensor.fill(this.data.ref(), .15)
   //   // var ss = this.data.storage.deref()
   //   // console.log(ss)
   //   console.log(dr)
@@ -322,13 +322,13 @@ function Tensor(dims)
   // counter = torch.THLongStorage.newWithSize(size.size).deref();
   // torch.THLongStorage.fill(counter.ref(), 0);
 
-  // var tensor = THTensor.newWithSize(size.ref(), null).deref();
+  // var tensor = THFloatTensor.newWithSize(size.ref(), null).deref();
   // this.data = tensor;
   // console.log("DIDIDs: ", size.data[size.size-1])
 
   // // while(!is_finished)
   // // {
-  //   // var dr = THTensor.storage(tensor.ref()).deref()
+  //   // var dr = THFloatTensor.storage(tensor.ref()).deref()
 
   //   // for(var i=0; i < dims.length; i++)
   //   // {
@@ -341,28 +341,28 @@ function Tensor(dims)
   //   {
   //     console.log("Setting: ", size.data[i]);
 
-  //     var dr = THTensor.storage(tensor.ref()).deref()
+  //     var dr = THFloatTensor.storage(tensor.ref()).deref()
   //     THStorage.set(dr.ref(), si++, size.data[i]);//(real)lua_tonumber(L, -1));
   //   }
 
   //   console.log("dds: ", this.data.storage.nDimension)
 
     // console.log("Filling")
-    // THTensor.fill(this.data.ref(), .15)
+    // THFloatTensor.fill(this.data.ref(), .15)
     // console.log("done fill")
   // console.log("ss", size.size);
 }
 
 Tensor.prototype.fill = function(val)
 {
-  THTensor.fill(this.ref, val)
+  THFloatTensor.fill(this.ref, val)
   return this
 }
 
 Tensor.prototype.sum = function(ix)
 {
   if(ix == undefined || ix == null)
-    return THTensor.sumall(this.ref)
+    return THFloatTensor.sumall(this.ref)
   else{
     throw new Error("Sum across dimension not yet supported")
   }
@@ -372,9 +372,9 @@ Tensor.prototype.sumreduce = Tensor.prototype.sum
 
 Tensor.view_tensor = function(orig, dims) {
   var rsize = arr_to_ls(dims);
-  var nt = THTensor.new().deref()
+  var nt = THFloatTensor.new().deref()
   // console.log("orig", orig)
-  THTensor.set(nt.ref(), orig.ref()) //orig.storage, orig.storageOffset, rsize.ref())
+  THFloatTensor.set(nt.ref(), orig.ref()) //orig.storage, orig.storageOffset, rsize.ref())
   return nt
 }
 
@@ -395,7 +395,6 @@ Tensor.prototype.reshape = function(dims) {
 Object.defineProperties(Tensor.prototype, {
   rank: { get: function() { return this.dims.length; } },
 });
-
 
 
 Tensor.prototype.zero = function()
@@ -453,7 +452,7 @@ Tensor.prototype.apply_function = function(cb)
 
   }, function(o_tensor)
   {
-    Tensor.apply_js(THTensor, o_tensor, cb)
+    Tensor.apply_js(THFloatTensor, o_tensor, cb)
   });
   // // console.log(this)
   // if(THType.indexOf('Cuda') != -1)
@@ -470,7 +469,7 @@ Tensor.prototype.apply_function = function(cb)
   //   // // torch.THFloatTensor.resize(tensor.ref(), size.ref(), ref.NULL)
 
   //   // // console.log("ref size: ", torch.THFloatTensor.nElement(tensor.ref()))
-  //   // // console.log("cuda size: ", THTensor.nElement(this.data.ref()))
+  //   // // console.log("cuda size: ", THFloatTensor.nElement(this.data.ref()))
 
   //   // // torch.THFloatTensor.resizeAs(tensor.ref(), this.data.ref());
   //   // // console.log("copying... ")
@@ -487,7 +486,7 @@ Tensor.prototype.apply_function = function(cb)
   //   Tensor.apply_js(torch.THFloatTensor, float_tensor, cb);
 
   //   // then we copy back to the gpu tensor
-  //   THTensor.copyFloat(this.data.ref(), tensor.ref())
+  //   THFloatTensor.copyFloat(this.data.ref(), tensor.ref())
   // }
   // else
   // {
@@ -495,7 +494,7 @@ Tensor.prototype.apply_function = function(cb)
   //   // this is currently a very expensive call
   //   // consider adding functions directly to the C extension code for frequently used functions
   //   // also making cuda extensions will obviously improve performance dramatically
-  //   Tensor.apply_js(THTensor, this.data, cb)
+  //   Tensor.apply_js(THFloatTensor, this.data, cb)
   // }
 
   return this
@@ -511,7 +510,7 @@ Tensor.function_in_float = function(ten_object, cb_cuda, cb_other)
     cb_cuda(tensor)
 
     // then we copy back to the gpu tensor
-    THTensor.copyFloat(ten_object.data.ref(), tensor.ref())
+    THFloatTensor.copyFloat(ten_object.data.ref(), tensor.ref())
   }
   else
   {
@@ -533,8 +532,8 @@ Tensor.prototype.copy = function(other, offset) {
   }
 
   // let's make the copy -- error if wrong sizes
-  THTensor['copy' + ttype](this.data.ref(), other.data.ref())
-  // THTensor.copy()
+  THFloatTensor['copy' + ttype](this.data.ref(), other.data.ref())
+  // THFloatTensor.copy()
   // BackingStore.set(this.data, other.data, offset);
 
   return this;
@@ -574,7 +573,7 @@ Tensor.get_set = function(js_tensor, coords, val_or_tensor)
 
   var o_tensor = js_tensor.data
   // start with the clone
-  var tensor = THTensor.newWithTensor(o_tensor.ref()).deref()
+  var tensor = THFloatTensor.newWiTHFloatTensor(o_tensor.ref()).deref()
 
   for(var dim=0; dim < dfinal; dim++)
   {
@@ -596,27 +595,27 @@ Tensor.get_set = function(js_tensor, coords, val_or_tensor)
         if(val_or_tensor != undefined){
           if(typeof(val_or_tensor) != "number") throw new Error("Value being set to single index needs to be number")
           THStorage.set(tensor.storage, tensor.storageOffset+pix*tensor.stride[0], val_or_tensor)
-          // THTensor.free(tensor);
+          // THFloatTensor.free(tensor);
 
           return
         }
         else{
           // we're all done, we only have a 1d tensor, so index into it
           var rval = THStorage.get(tensor.storage, tensor.storageOffset+pix*tensor.stride[0])
-          // THTensor.free(tensor);
+          // THFloatTensor.free(tensor);
           return rval
         }
       }
       else
       {
         // perform a select for this dimension and index
-        THTensor.select(tensor.ref(), ref.NULL, cdim, pix)
+        THFloatTensor.select(tensor.ref(), ref.NULL, cdim, pix)
         // after the selection, check our dimension count
         // console.log("preSelected:", ndims)
         // console.log("ptense:", tensor)
-        ndims = THTensor.nDimension(tensor.ref())
+        ndims = THFloatTensor.nDimension(tensor.ref())
 
-        // ndims2 = THTensor.nDimension(tt2.ref())
+        // ndims2 = THFloatTensor.nDimension(tt2.ref())
 
         // console.log("postSelected:", ndims, " final: ", dfinal);//, " 2:", ndims2)
       }
@@ -624,7 +623,7 @@ Tensor.get_set = function(js_tensor, coords, val_or_tensor)
     else if(typeof(pix) != "number")
     {
       // messed this up, free it and kill the loop
-      // THTensor.free(tensor);
+      // THFloatTensor.free(tensor);
       tensor = null;
       throw new Error("tensor index must be number of array of numbers")
     }
@@ -651,15 +650,15 @@ Tensor.get_set = function(js_tensor, coords, val_or_tensor)
       if(end < 0) end = tensor.size[cdim] + end + 1;
       if(!((end >= 0) && (end < tensor.size[cdim]))) throw new Error("tensor end index out of bounds");
       if(end < start) throw new Error("tensor end index must be greater than or equal to start");
-      THTensor.narrow(tensor.ref(), ref.NULL, cdim++, start, end-start+1);
+      THFloatTensor.narrow(tensor.ref(), ref.NULL, cdim++, start, end-start+1);
       // now how many dimensions are we?
-      ndims = THTensor.nDimension(tensor.ref())
+      ndims = THFloatTensor.nDimension(tensor.ref())
     }
   }
 
   // copy from the tensor value
   if(val_or_tensor){
-    THTensor['copy' + val_or_tensor.type](tensor.ref(), val_or_tensor.data.ref())
+    THFloatTensor['copy' + val_or_tensor.type](tensor.ref(), val_or_tensor.data.ref())
   }
   return tensor
 }
@@ -684,7 +683,7 @@ Tensor.prototype.get = function(coords) {
 
 Tensor.prototype.override = function(t_data, dims)
 {
-  this.dims = dims || Tensor.ls_to_array(THTensor.newSizeOf(t_data.ref()).deref())
+  this.dims = dims || Tensor.ls_to_array(THFloatTensor.newSizeOf(t_data.ref()).deref())
   this.length = f_arr_prod(this.dims)
   this.data = t_data
   this.ref = this.data.ref()
@@ -693,7 +692,7 @@ Tensor.prototype.override = function(t_data, dims)
 Tensor.prototype.set = function(coords, val_or_tensor) {
   // either set a value or a tensor
   var tensor = Tensor.get_set(this, coords, val_or_tensor)
-  // var tt_ref = Object.pro Tensor(THTensor.size(tensor.ref()))
+  // var tt_ref = Object.pro Tensor(THFloatTensor.size(tensor.ref()))
   if(tensor == undefined)
     return tensor
 
@@ -715,13 +714,13 @@ Tensor.ls_to_array = function(ls)
 
 Tensor.get_size = function(ts, TensorType)
 {
-  TensorType = TensorType || THTensor
+  TensorType = TensorType || THFloatTensor
   return TensorType.newSizeOf(ts).deref()
 }
 
 Tensor.prototype.size = function(ix) {
   if(ix != undefined)
-    return THTensor.size(this.data.ref(), ix)
+    return THFloatTensor.size(this.data.ref(), ix)
   else
     return Tensor.ls_to_array(Tensor.get_size(this.data.ref()))
 };
@@ -734,13 +733,13 @@ Tensor.prototype.size = function(ix) {
 
 Tensor.prototype.min = function()
 {
-  return THTensor.minall(this.data.ref())
+  return THFloatTensor.minall(this.data.ref())
 }
 Tensor.prototype.minreduce = Tensor.prototype.min
 
 Tensor.prototype.max = function()
 {
-  return THTensor.maxall(this.data.ref())
+  return THFloatTensor.maxall(this.data.ref())
 }
 Tensor.prototype.maxreduce = Tensor.prototype.max
 
@@ -748,7 +747,7 @@ Tensor.byte_sizeof = function(sz, ttype)
 {
   var bbtensor = torch.THByteTensor
   if(ttype == "CudaFloat"){
-    bbtensor = THTensor
+    bbtensor = THFloatTensor
   }
   else if(this.type.indexOf("Cuda") != -1)
     throw new Error("Don't know how to neTensor for cuda non-float")
@@ -762,8 +761,8 @@ Tensor.byte_nonzero = function(ts, ttype)
 {
   console.log("refref", ts.ref)
   var sz = Tensor.get_size(ts.ref())
-  var tempty = THTensor.newWithSize(sz.ref(), ref.NULL).deref()
-  THTensor.zero(tempty.ref())
+  var tempty = THFloatTensor.newWithSize(sz.ref(), ref.NULL).deref()
+  THFloatTensor.zero(tempty.ref())
   var bobj = Tensor.byte_sizeof(sz, ttype)
   var bempty = bobj.empty;
   var bbtensor = bobj.byte_tensor
@@ -771,7 +770,7 @@ Tensor.byte_nonzero = function(ts, ttype)
 
 
   // fill byte tensor with not equals
-  THTensor.neTensor(bempty.ref(), tempty.ref(), ts.ref())
+  THFloatTensor.neTensor(bempty.ref(), tempty.ref(), ts.ref())
   return bbtensor.sumall(bempty.ref())
 }
 
@@ -797,12 +796,12 @@ Tensor.prototype.dot = function(t) {
     throw new Error('Dimension mismatch in dot. Inputs have dimension ' + a.dims + ' and ' + b.dims + '.');
   }
 
-  var t_for_mul = THTensor.new().deref()
-  THTensor.resize2d(t_for_mul.ref(), a.dims[0], b.dims[1])
+  var t_for_mul = THFloatTensor.new().deref()
+  THFloatTensor.resize2d(t_for_mul.ref(), a.dims[0], b.dims[1])
   var beta = 0
   var alpha = 1
 
-  THTensor.addmm(t_for_mul.ref(), beta, t_for_mul.ref(), alpha, a.data.ref(), b.data.ref())
+  THFloatTensor.addmm(t_for_mul.ref(), beta, t_for_mul.ref(), alpha, a.data.ref(), b.data.ref())
 
   var mm_tensor = a.refClone()
   mm_tensor.override(t_for_mul, [a.dims[0], b.dims[1]])
@@ -811,7 +810,7 @@ Tensor.prototype.dot = function(t) {
 
 Tensor.create_empty_of_size = function(ts, TensorType)
 {
-  TensorType = TensorType || THTensor
+  TensorType = TensorType || THFloatTensor
   return TensorType.newWithSize(Tensor.get_size(ts, TensorType).ref(), ref.NULL).deref()
 }
 
@@ -840,7 +839,7 @@ Tensor.prototype.cholesky = function() {
     THFloatTensor.potrf(tensor.ref(), ff.ref())
 
     // then we copy back to the gpu tensor
-    THTensor.copyFloat(cc.ref(), ff.ref())
+    THFloatTensor.copyFloat(cc.ref(), ff.ref())
 
     // free the extra float tensors
     THFloatTensor.free(tensor.ref())
@@ -850,7 +849,7 @@ Tensor.prototype.cholesky = function() {
     // simple if not cuda
     cc = Tensor.create_empty_of_size(a.data.ref())
     // perform operation
-    THTensor.potrf(this.data.ref(), cc.ref())
+    THFloatTensor.potrf(this.data.ref(), cc.ref())
 
   }
 
@@ -859,8 +858,10 @@ Tensor.prototype.cholesky = function() {
   return ccTensor
 }
 
+
 Tensor.arr_is_equal = function(a,b)
 {
+
   if(a.length != b.length)
     return false
   for(var i=0; i < a.length; i++)
@@ -885,7 +886,7 @@ Tensor.prototype.assert_size_equal = function(other, assert_msg)
 
 
 function addOperationOrComponentOpMethod(name, method, comp_method, no_mval) {
-  Tensor[name] = new Function('THTensor', 'Tensor', [
+  Tensor[name] = new Function('THFloatTensor', 'Tensor', [
     'return function(adata, bdata, not_in_place, mval){',
     'mval = mval || 1',
     'var end_ref = adata.data',
@@ -897,27 +898,28 @@ function addOperationOrComponentOpMethod(name, method, comp_method, no_mval) {
     '}',
 
     'if(typeof(bdata) == "number")',
-      'THTensor.' + method + '(end_ref.ref(), adata.data.ref(), mval*bdata)',
+      'THFloatTensor.' + method + '(end_ref.ref(), adata.data.ref(), mval*bdata)',
     'else',
-      'THTensor.' + comp_method + '(end_ref.ref(), adata.data.ref(), ' + (no_mval ? '' : 'mval, ') + 'bdata.data.ref())',
+      'THFloatTensor.' + comp_method + '(end_ref.ref(), adata.data.ref(), ' + (no_mval ? '' : 'mval, ') + 'bdata.data.ref())',
     'return end_ref}'
-  ].join('\n'))(THTensor, Tensor);
+  ].join('\n'))(THFloatTensor, Tensor);
 }
 
+//NAME = METHOD in my Tensor
 function addBinaryMethod(name, method, mulval) {
   mulval = mulval || 1
 
-  // unfortunately complicated, we need to pass in some globals -- including THTensor and Tensor
+  // unfortunately complicated, we need to pass in some globals -- including THFloatTensor and Tensor
   // in the future, we'll switch this to being able to support all sorts of tensors (cuda/float/double/etc)
-  var fn_inplace = new Function('THTensor', 'Tensor', [
+  var fn_inplace = new Function('THFloatTensor', 'Tensor', [
       'return function(c_or_tensor){',
       'this.assert_size_equal(c_or_tensor, "C' + name + ' must be equal sizes")',
       // not in place, make the clone
       'Tensor.' + method + '(this, c_or_tensor, false, ' + mulval + ')',
       'return this}'
-  ].join('\n'))(THTensor, Tensor);
+  ].join('\n'))(THFloatTensor, Tensor);
 
- var fn_notinplace = new Function('THTensor', 'Tensor', [
+ var fn_notinplace = new Function('THFloatTensor', 'Tensor', [
       'return function(c_or_tensor){',
       'this.assert_size_equal(c_or_tensor, "C' + name + ' must be equal sizes")',
       // not in place, make the clone
@@ -925,14 +927,14 @@ function addBinaryMethod(name, method, mulval) {
       'var cc = this.refClone()',
       ' cc.override(atensor, this.dims.slice(0))',
       'return cc}'
-  ].join('\n'))(THTensor, Tensor);
+  ].join('\n'))(THFloatTensor, Tensor);
 
   Tensor.prototype[name + 'eq'] = fn_inplace;
   Tensor.prototype[name] = fn_notinplace
 }
 
 function addUnaryOperationMethod(name, method) {
-  Tensor[name] = new Function('THTensor', 'Tensor', [
+  Tensor[name] = new Function('THFloatTensor', 'Tensor', [
     'return function(adata, not_in_place){',
     'var end_ref = adata.data',
 
@@ -942,31 +944,31 @@ function addUnaryOperationMethod(name, method) {
       'end_ref = Tensor.create_empty_of_size(adata.data.ref())',
     '}',
     // operation in place please
-    'THTensor.' + method + '(end_ref.ref(), adata.data.ref())',
+    'THFloatTensor.' + method + '(end_ref.ref(), adata.data.ref())',
     'return end_ref}'
-  ].join('\n'))(THTensor, Tensor);
+  ].join('\n'))(THFloatTensor, Tensor);
 }
 
 function addUnaryToPrototype(name, method) {
   // mulval = mulval || 1
 
-  // unfortunately complicated, we need to pass in some globals -- including THTensor and Tensor
+  // unfortunately complicated, we need to pass in some globals -- including THFloatTensor and Tensor
   // in the future, we'll switch this to being able to support all sorts of tensors (cuda/float/double/etc)
-  var fn_inplace = new Function('THTensor', 'Tensor', [
+  var fn_inplace = new Function('THFloatTensor', 'Tensor', [
       'return function(){',
       // not in place, make the clone
       'Tensor.' + method + '(this, false)',
       'return this}'
-  ].join('\n'))(THTensor, Tensor);
+  ].join('\n'))(THFloatTensor, Tensor);
 
- var fn_notinplace = new Function('THTensor', 'Tensor', [
+ var fn_notinplace = new Function('THFloatTensor', 'Tensor', [
       'return function(){',
       // not in place, make the clone
       'var atensor = Tensor.' + method + '(this, true)',
       'var cc = this.refClone()',
       'cc.override(atensor, this.dims.slice(0))',
       'return cc}'
-  ].join('\n'))(THTensor, Tensor);
+  ].join('\n'))(THFloatTensor, Tensor);
 
   Tensor.prototype[name + 'eq'] = fn_inplace;
   Tensor.prototype[name] = fn_notinplace
@@ -1004,8 +1006,8 @@ Tensor.byte_comparison = function(byte_comp_fct)
     var tcompare
     if(typeof(bdata) == "number")
     {
-      tcompare = THTensor.newWithSize(sz.ref(), ref.NULL).deref()
-      THTensor.fill(tcompare.ref(), bdata)
+      tcompare = THFloatTensor.newWithSize(sz.ref(), ref.NULL).deref()
+      THFloatTensor.fill(tcompare.ref(), bdata)
     }
     else
     {
@@ -1013,7 +1015,7 @@ Tensor.byte_comparison = function(byte_comp_fct)
     }
 
     var bempty, bbtensor = Tensor.byte_sizeof(sz, ttype)
-    THTensor[byte_comp_fct](bempty.ref(), adata.data.ref(), tcompare.ref())
+    THFloatTensor[byte_comp_fct](bempty.ref(), adata.data.ref(), tcompare.ref())
 
     // currently handled stupidly
     var bb = adata.refClone()
@@ -1052,12 +1054,12 @@ Tensor.atan2_tensors = function(adata, bdata, not_in_place, mval)
   }
 
   if(typeof(bdata) == "number"){
-    THTensor.add(end_ref.ref(), adata.data.ref(), bdata)
+    THFloatTensor.add(end_ref.ref(), adata.data.ref(), bdata)
     bdata = {data: Tensor.create_empty_of_size(adata.data.ref())}
-    THTensor.fill(bdata.data.ref(), bdata)
+    THFloatTensor.fill(bdata.data.ref(), bdata)
   }
 
-  THTensor.atan2(end_ref.ref(), adata.data.ref(), bdata.data.ref())
+  THFloatTensor.atan2(end_ref.ref(), adata.data.ref(), bdata.data.ref())
 
   return end_ref
 }
@@ -1200,7 +1202,7 @@ Tensor.prototype.inverteq = function()
 
   //create something this size with 1s and then cdiv
   var cc = Tensor.create_empty_of_size(this.data.ref())
-  THTensor.fill(cc.ref(), 1)
+  THFloatTensor.fill(cc.ref(), 1)
   var ccTensor = this.refClone()
   ccTensor.override(cc, this.dims)
   ccTensor.diveq(this)
@@ -1306,7 +1308,7 @@ Tensor.prototype.diagonal = function() {
   assert.ok(this.dims[1] === 1);
 
   var etensor = Tensor.create_empty_of_size(this.data.ref())
-  THTensor.diag(etensor.ref(),this.data.ref(),0)
+  THFloatTensor.diag(etensor.ref(),this.data.ref(),0)
   var ccTensor = this.refClone()
   ccTensor.override(etensor, this.dims)
   return ccTensor
@@ -1318,9 +1320,9 @@ Tensor.prototype.transpose = function(ix, ix2) {
   var ccTensor = this.clone()
 
   if(ix == undefined)
-    THTensor.transpose(ccTensor.data.ref(), ref.NULL, 0, 1)
+    THFloatTensor.transpose(ccTensor.data.ref(), ref.NULL, 0, 1)
   else
-    THTensor.transpose(ccTensor.data.ref(), ref.NULL, ix, ix2)
+    THFloatTensor.transpose(ccTensor.data.ref(), ref.NULL, ix, ix2)
 
   return ccTensor
 }
@@ -1334,7 +1336,7 @@ Tensor.prototype.inverse = function() {
   var etensor = Tensor.create_empty_of_size(this.data.ref())
 
   // stick the inverse into the new empty clone
-  THTensor.getri(etensor.ref(), this.data.ref())
+  THFloatTensor.getri(etensor.ref(), this.data.ref())
 
   var ccTensor = this.refClone()
   ccTensor.override(etensor, this.dims)
@@ -1355,7 +1357,7 @@ Tensor.prototype.determinant = function()
 
   }, function(o_tensor)
   {
-    determinant = THTensor.determinant(o_tensor.ref())
+    determinant = THFloatTensor.determinant(o_tensor.ref())
   });
 
   return determinant
@@ -1543,9 +1545,9 @@ Tensor.prototype.determinant = function()
 //   }
 
 //   if(typeof(bdata) == "number")
-//     THTensor.add(end_ref.ref(), adata.data.ref(), bdata)
+//     THFloatTensor.add(end_ref.ref(), adata.data.ref(), bdata)
 //   else
-//     THTensor.cadd(end_ref.ref(), adata.data.ref(), mval, bdata.data.ref())
+//     THFloatTensor.cadd(end_ref.ref(), adata.data.ref(), mval, bdata.data.ref())
 
 //   return end_ref
 // }
@@ -1594,14 +1596,14 @@ Tensor.prototype.determinant = function()
 //   if(typeof(c_or_tensor) == "number")
 //   {
 //     // add in place please
-//     THTensor.mul(this.data.ref(), this.data.ref(), c_or_tensor)
+//     THFloatTensor.mul(this.data.ref(), this.data.ref(), c_or_tensor)
 //   }
 //   else
 //   {
 //     // otherwise, make sure they're the same size
 //     if(!Tensor.arr_is_equal(c_or_tensor.dims, this.dims)) throw new Error("Add must be same size tensors")
 
-//     THTensor.cmul(this.data.ref(), this.data.ref(), c_or_tensor.data.ref())
+//     THFloatTensor.cmul(this.data.ref(), this.data.ref(), c_or_tensor.data.ref())
 //   }
 //   return this
 // }
@@ -1668,7 +1670,7 @@ Tensor.prototype.determinant = function()
 
 // static int torch_Tensor_(__index__)(lua_State *L)
 // {
-//   THTensor *tensor = luaT_checkudata(L, 1, torch_Tensor);
+//   THFloatTensor *tensor = luaT_checkudata(L, 1, torch_Tensor);
 //   THLongStorage *idx = NULL;
 //   THByteTensor *mask;
 
@@ -1686,8 +1688,8 @@ Tensor.prototype.determinant = function()
 //     }
 //     else
 //     {
-//       tensor = THTensor_(newWithTensor)(tensor);
-//       THTensor_(select)(tensor, NULL, 0, index);
+//       tensor = THFloatTensor_(newWiTHFloatTensor)(tensor);
+//       THFloatTensor_(select)(tensor, NULL, 0, index);
 //       luaT_pushudata(L, tensor, torch_Tensor);
 //     }
 //     lua_pushboolean(L, 1);
@@ -1695,7 +1697,7 @@ Tensor.prototype.determinant = function()
 //   }
 //   else if((idx = luaT_toudata(L, 2, "torch.LongStorage")))
 //   {
-//     long index = THTensor_(storageOffset)(tensor);
+//     long index = THFloatTensor_(storageOffset)(tensor);
 //     int dim;
 
 //     THArgCheck(idx->size == tensor->nDimension, 2, "invalid size");
@@ -1707,7 +1709,7 @@ Tensor.prototype.determinant = function()
 //       THArgCheck((z >= 0) && (z < tensor->size[dim]), 2, "index out of bound");
 //       index += z*tensor->stride[dim];
 //     }
-//     lua_pushnumber(L, (double)THStorage_(get)(THTensor_(storage)(tensor), index));
+//     lua_pushnumber(L, (double)THStorage_(get)(THFloatTensor_(storage)(tensor), index));
 //     lua_pushboolean(L, 1);
 //     return 2;
 //   }
@@ -1720,7 +1722,7 @@ Tensor.prototype.determinant = function()
 
 //     ndims = tensor->nDimension;
 //     THArgCheck(lua_objlen(L, 2) <= ndims, 2, "too many indices provided");
-//     tensor = THTensor_(newWithTensor)(tensor);
+//     tensor = THFloatTensor_(newWiTHFloatTensor)(tensor);
 
 //     for(dim = 0; dim < ndims; dim++)
 //     {
@@ -1735,7 +1737,7 @@ Tensor.prototype.determinant = function()
 //           done = 1;
 //           lua_pushnumber(L, THStorage_(get)(tensor->storage, tensor->storageOffset+z*tensor->stride[0]));
 //         } else {
-//           THTensor_(select)(tensor, NULL, cdim, z);
+//           THFloatTensor_(select)(tensor, NULL, cdim, z);
 //         }
 //       }
 //       else if (lua_istable(L, -1))
@@ -1761,7 +1763,7 @@ Tensor.prototype.determinant = function()
 
 //         THArgCheck((end >= start), 2, "end index must be greater or equal to start index");
 
-//         THTensor_(narrow)(tensor, NULL, cdim++, start, end-start+1);
+//         THFloatTensor_(narrow)(tensor, NULL, cdim++, start, end-start+1);
 //       }
 //       else
 //       {
@@ -1771,15 +1773,15 @@ Tensor.prototype.determinant = function()
 //     if(!done) {
 //       luaT_pushudata(L, tensor, torch_Tensor);
 //     } else {
-//       THTensor_(free)(tensor);
+//       THFloatTensor_(free)(tensor);
 //     }
 //     lua_pushboolean(L, 1);
 //     return 2;
 //   }
 //   else if((mask = luaT_toudata(L, 2, "torch.ByteTensor")))
 //   {
-//     THTensor *vals = THTensor_(new)();
-//     THTensor_(maskedSelect)(vals, tensor, mask);
+//     THFloatTensor *vals = THFloatTensor_(new)();
+//     THFloatTensor_(maskedSelect)(vals, tensor, mask);
 //     luaT_pushudata(L, vals, torch_Tensor);
 //     lua_pushboolean(L, 1);
 //     return 2;
