@@ -1,7 +1,7 @@
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/install/local.dir
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/install/strip.dir
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/install.dir
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/list_install_components.dir
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/rebuild_cache.dir
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/edit_cache.dir
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/mTH.dir
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/install/local.dir
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/install/strip.dir
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/install.dir
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/list_install_components.dir
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/rebuild_cache.dir
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/edit_cache.dir
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/mTH.dir

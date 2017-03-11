@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.7.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jpchen/torchjs/thlib
+CMAKE_SOURCE_DIR = /Users/jpchen/jstorch/torch.js/libTH
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jpchen/torchjs/thlib/build
+CMAKE_BINARY_DIR = /Users/jpchen/jstorch/torch.js/libTH/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mTH.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/mTH.dir/flags.make
 
 CMakeFiles/mTH.dir/THGeneral.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THGeneral.c.o: ../THGeneral.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mTH.dir/THGeneral.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THGeneral.c.o   -c /Users/jpchen/torchjs/thlib/THGeneral.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mTH.dir/THGeneral.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THGeneral.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THGeneral.c
 
 CMakeFiles/mTH.dir/THGeneral.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THGeneral.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THGeneral.c > CMakeFiles/mTH.dir/THGeneral.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THGeneral.c > CMakeFiles/mTH.dir/THGeneral.c.i
 
 CMakeFiles/mTH.dir/THGeneral.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THGeneral.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THGeneral.c -o CMakeFiles/mTH.dir/THGeneral.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THGeneral.c -o CMakeFiles/mTH.dir/THGeneral.c.s
 
 CMakeFiles/mTH.dir/THGeneral.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/mTH.dir/THGeneral.c.o.provides.build: CMakeFiles/mTH.dir/THGeneral.c.
 
 CMakeFiles/mTH.dir/THAllocator.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THAllocator.c.o: ../THAllocator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mTH.dir/THAllocator.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THAllocator.c.o   -c /Users/jpchen/torchjs/thlib/THAllocator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mTH.dir/THAllocator.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THAllocator.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THAllocator.c
 
 CMakeFiles/mTH.dir/THAllocator.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THAllocator.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THAllocator.c > CMakeFiles/mTH.dir/THAllocator.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THAllocator.c > CMakeFiles/mTH.dir/THAllocator.c.i
 
 CMakeFiles/mTH.dir/THAllocator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THAllocator.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THAllocator.c -o CMakeFiles/mTH.dir/THAllocator.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THAllocator.c -o CMakeFiles/mTH.dir/THAllocator.c.s
 
 CMakeFiles/mTH.dir/THAllocator.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/mTH.dir/THAllocator.c.o.provides.build: CMakeFiles/mTH.dir/THAllocato
 
 CMakeFiles/mTH.dir/THStorage.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THStorage.c.o: ../THStorage.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mTH.dir/THStorage.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THStorage.c.o   -c /Users/jpchen/torchjs/thlib/THStorage.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mTH.dir/THStorage.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THStorage.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THStorage.c
 
 CMakeFiles/mTH.dir/THStorage.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THStorage.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THStorage.c > CMakeFiles/mTH.dir/THStorage.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THStorage.c > CMakeFiles/mTH.dir/THStorage.c.i
 
 CMakeFiles/mTH.dir/THStorage.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THStorage.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THStorage.c -o CMakeFiles/mTH.dir/THStorage.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THStorage.c -o CMakeFiles/mTH.dir/THStorage.c.s
 
 CMakeFiles/mTH.dir/THStorage.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/mTH.dir/THStorage.c.o.provides.build: CMakeFiles/mTH.dir/THStorage.c.
 
 CMakeFiles/mTH.dir/THTensorExtra.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THTensorExtra.c.o: ../THTensorExtra.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mTH.dir/THTensorExtra.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THTensorExtra.c.o   -c /Users/jpchen/torchjs/thlib/THTensorExtra.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mTH.dir/THTensorExtra.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THTensorExtra.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THTensorExtra.c
 
 CMakeFiles/mTH.dir/THTensorExtra.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THTensorExtra.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THTensorExtra.c > CMakeFiles/mTH.dir/THTensorExtra.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THTensorExtra.c > CMakeFiles/mTH.dir/THTensorExtra.c.i
 
 CMakeFiles/mTH.dir/THTensorExtra.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THTensorExtra.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THTensorExtra.c -o CMakeFiles/mTH.dir/THTensorExtra.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THTensorExtra.c -o CMakeFiles/mTH.dir/THTensorExtra.c.s
 
 CMakeFiles/mTH.dir/THTensorExtra.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/mTH.dir/THTensorExtra.c.o.provides.build: CMakeFiles/mTH.dir/THTensor
 
 CMakeFiles/mTH.dir/THBlas.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THBlas.c.o: ../THBlas.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mTH.dir/THBlas.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THBlas.c.o   -c /Users/jpchen/torchjs/thlib/THBlas.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mTH.dir/THBlas.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THBlas.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THBlas.c
 
 CMakeFiles/mTH.dir/THBlas.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THBlas.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THBlas.c > CMakeFiles/mTH.dir/THBlas.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THBlas.c > CMakeFiles/mTH.dir/THBlas.c.i
 
 CMakeFiles/mTH.dir/THBlas.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THBlas.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THBlas.c -o CMakeFiles/mTH.dir/THBlas.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THBlas.c -o CMakeFiles/mTH.dir/THBlas.c.s
 
 CMakeFiles/mTH.dir/THBlas.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/mTH.dir/THBlas.c.o.provides.build: CMakeFiles/mTH.dir/THBlas.c.o
 
 CMakeFiles/mTH.dir/THLapack.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THLapack.c.o: ../THLapack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mTH.dir/THLapack.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THLapack.c.o   -c /Users/jpchen/torchjs/thlib/THLapack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mTH.dir/THLapack.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THLapack.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THLapack.c
 
 CMakeFiles/mTH.dir/THLapack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THLapack.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THLapack.c > CMakeFiles/mTH.dir/THLapack.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THLapack.c > CMakeFiles/mTH.dir/THLapack.c.i
 
 CMakeFiles/mTH.dir/THLapack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THLapack.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THLapack.c -o CMakeFiles/mTH.dir/THLapack.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THLapack.c -o CMakeFiles/mTH.dir/THLapack.c.s
 
 CMakeFiles/mTH.dir/THLapack.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/mTH.dir/THLapack.c.o.provides.build: CMakeFiles/mTH.dir/THLapack.c.o
 
 CMakeFiles/mTH.dir/THLogAdd.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THLogAdd.c.o: ../THLogAdd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mTH.dir/THLogAdd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THLogAdd.c.o   -c /Users/jpchen/torchjs/thlib/THLogAdd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mTH.dir/THLogAdd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THLogAdd.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THLogAdd.c
 
 CMakeFiles/mTH.dir/THLogAdd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THLogAdd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THLogAdd.c > CMakeFiles/mTH.dir/THLogAdd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THLogAdd.c > CMakeFiles/mTH.dir/THLogAdd.c.i
 
 CMakeFiles/mTH.dir/THLogAdd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THLogAdd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THLogAdd.c -o CMakeFiles/mTH.dir/THLogAdd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THLogAdd.c -o CMakeFiles/mTH.dir/THLogAdd.c.s
 
 CMakeFiles/mTH.dir/THLogAdd.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/mTH.dir/THLogAdd.c.o.provides.build: CMakeFiles/mTH.dir/THLogAdd.c.o
 
 CMakeFiles/mTH.dir/THRandom.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THRandom.c.o: ../THRandom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mTH.dir/THRandom.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THRandom.c.o   -c /Users/jpchen/torchjs/thlib/THRandom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mTH.dir/THRandom.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THRandom.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THRandom.c
 
 CMakeFiles/mTH.dir/THRandom.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THRandom.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THRandom.c > CMakeFiles/mTH.dir/THRandom.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THRandom.c > CMakeFiles/mTH.dir/THRandom.c.i
 
 CMakeFiles/mTH.dir/THRandom.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THRandom.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THRandom.c -o CMakeFiles/mTH.dir/THRandom.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THRandom.c -o CMakeFiles/mTH.dir/THRandom.c.s
 
 CMakeFiles/mTH.dir/THRandom.c.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/mTH.dir/THRandom.c.o.provides.build: CMakeFiles/mTH.dir/THRandom.c.o
 
 CMakeFiles/mTH.dir/THFile.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THFile.c.o: ../THFile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mTH.dir/THFile.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THFile.c.o   -c /Users/jpchen/torchjs/thlib/THFile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mTH.dir/THFile.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THFile.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THFile.c
 
 CMakeFiles/mTH.dir/THFile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THFile.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THFile.c > CMakeFiles/mTH.dir/THFile.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THFile.c > CMakeFiles/mTH.dir/THFile.c.i
 
 CMakeFiles/mTH.dir/THFile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THFile.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THFile.c -o CMakeFiles/mTH.dir/THFile.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THFile.c -o CMakeFiles/mTH.dir/THFile.c.s
 
 CMakeFiles/mTH.dir/THFile.c.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/mTH.dir/THFile.c.o.provides.build: CMakeFiles/mTH.dir/THFile.c.o
 
 CMakeFiles/mTH.dir/THDiskFile.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THDiskFile.c.o: ../THDiskFile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mTH.dir/THDiskFile.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THDiskFile.c.o   -c /Users/jpchen/torchjs/thlib/THDiskFile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mTH.dir/THDiskFile.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THDiskFile.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THDiskFile.c
 
 CMakeFiles/mTH.dir/THDiskFile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THDiskFile.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THDiskFile.c > CMakeFiles/mTH.dir/THDiskFile.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THDiskFile.c > CMakeFiles/mTH.dir/THDiskFile.c.i
 
 CMakeFiles/mTH.dir/THDiskFile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THDiskFile.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THDiskFile.c -o CMakeFiles/mTH.dir/THDiskFile.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THDiskFile.c -o CMakeFiles/mTH.dir/THDiskFile.c.s
 
 CMakeFiles/mTH.dir/THDiskFile.c.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/mTH.dir/THDiskFile.c.o.provides.build: CMakeFiles/mTH.dir/THDiskFile.
 
 CMakeFiles/mTH.dir/THMemoryFile.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THMemoryFile.c.o: ../THMemoryFile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mTH.dir/THMemoryFile.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THMemoryFile.c.o   -c /Users/jpchen/torchjs/thlib/THMemoryFile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mTH.dir/THMemoryFile.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THMemoryFile.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THMemoryFile.c
 
 CMakeFiles/mTH.dir/THMemoryFile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THMemoryFile.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THMemoryFile.c > CMakeFiles/mTH.dir/THMemoryFile.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THMemoryFile.c > CMakeFiles/mTH.dir/THMemoryFile.c.i
 
 CMakeFiles/mTH.dir/THMemoryFile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THMemoryFile.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THMemoryFile.c -o CMakeFiles/mTH.dir/THMemoryFile.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THMemoryFile.c -o CMakeFiles/mTH.dir/THMemoryFile.c.s
 
 CMakeFiles/mTH.dir/THMemoryFile.c.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/mTH.dir/THMemoryFile.c.o.provides.build: CMakeFiles/mTH.dir/THMemoryF
 
 CMakeFiles/mTH.dir/THAtomic.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THAtomic.c.o: ../THAtomic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mTH.dir/THAtomic.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THAtomic.c.o   -c /Users/jpchen/torchjs/thlib/THAtomic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mTH.dir/THAtomic.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THAtomic.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THAtomic.c
 
 CMakeFiles/mTH.dir/THAtomic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THAtomic.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THAtomic.c > CMakeFiles/mTH.dir/THAtomic.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THAtomic.c > CMakeFiles/mTH.dir/THAtomic.c.i
 
 CMakeFiles/mTH.dir/THAtomic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THAtomic.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THAtomic.c -o CMakeFiles/mTH.dir/THAtomic.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THAtomic.c -o CMakeFiles/mTH.dir/THAtomic.c.s
 
 CMakeFiles/mTH.dir/THAtomic.c.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/mTH.dir/THAtomic.c.o.provides.build: CMakeFiles/mTH.dir/THAtomic.c.o
 
 CMakeFiles/mTH.dir/THVector.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/THVector.c.o: ../THVector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mTH.dir/THVector.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THVector.c.o   -c /Users/jpchen/torchjs/thlib/THVector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mTH.dir/THVector.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mTH.dir/THVector.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/THVector.c
 
 CMakeFiles/mTH.dir/THVector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/THVector.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/torchjs/thlib/THVector.c > CMakeFiles/mTH.dir/THVector.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jpchen/jstorch/torch.js/libTH/THVector.c > CMakeFiles/mTH.dir/THVector.c.i
 
 CMakeFiles/mTH.dir/THVector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/THVector.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/torchjs/thlib/THVector.c -o CMakeFiles/mTH.dir/THVector.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jpchen/jstorch/torch.js/libTH/THVector.c -o CMakeFiles/mTH.dir/THVector.c.s
 
 CMakeFiles/mTH.dir/THVector.c.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/mTH.dir/THVector.c.o.provides.build: CMakeFiles/mTH.dir/THVector.c.o
 
 CMakeFiles/mTH.dir/generic/simd/convolve.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/generic/simd/convolve.c.o: ../generic/simd/convolve.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mTH.dir/generic/simd/convolve.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -o CMakeFiles/mTH.dir/generic/simd/convolve.c.o   -c /Users/jpchen/torchjs/thlib/generic/simd/convolve.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mTH.dir/generic/simd/convolve.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -o CMakeFiles/mTH.dir/generic/simd/convolve.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve.c
 
 CMakeFiles/mTH.dir/generic/simd/convolve.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/generic/simd/convolve.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -E /Users/jpchen/torchjs/thlib/generic/simd/convolve.c > CMakeFiles/mTH.dir/generic/simd/convolve.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -E /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve.c > CMakeFiles/mTH.dir/generic/simd/convolve.c.i
 
 CMakeFiles/mTH.dir/generic/simd/convolve.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/generic/simd/convolve.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -S /Users/jpchen/torchjs/thlib/generic/simd/convolve.c -o CMakeFiles/mTH.dir/generic/simd/convolve.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=c99 -S /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve.c -o CMakeFiles/mTH.dir/generic/simd/convolve.c.s
 
 CMakeFiles/mTH.dir/generic/simd/convolve.c.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/mTH.dir/generic/simd/convolve.c.o.provides.build: CMakeFiles/mTH.dir/
 
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o: ../generic/simd/convolve5x5_sse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -std=c99 -o CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o   -c /Users/jpchen/torchjs/thlib/generic/simd/convolve5x5_sse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -std=c99 -o CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve5x5_sse.c
 
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -std=c99 -E /Users/jpchen/torchjs/thlib/generic/simd/convolve5x5_sse.c > CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -std=c99 -E /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve5x5_sse.c > CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.i
 
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -std=c99 -S /Users/jpchen/torchjs/thlib/generic/simd/convolve5x5_sse.c -o CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -std=c99 -S /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve5x5_sse.c -o CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.s
 
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o.provides.build: CMakeFiles/m
 
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.o: CMakeFiles/mTH.dir/flags.make
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.o: ../generic/simd/convolve5x5_avx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -mavx -std=c99 -o CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.o   -c /Users/jpchen/torchjs/thlib/generic/simd/convolve5x5_avx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -mavx -std=c99 -o CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve5x5_avx.c
 
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -mavx -std=c99 -E /Users/jpchen/torchjs/thlib/generic/simd/convolve5x5_avx.c > CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -mavx -std=c99 -E /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve5x5_avx.c > CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.i
 
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -mavx -std=c99 -S /Users/jpchen/torchjs/thlib/generic/simd/convolve5x5_avx.c -o CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -O3 -ffast-math -mavx -std=c99 -S /Users/jpchen/jstorch/torch.js/libTH/generic/simd/convolve5x5_avx.c -o CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.s
 
 CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.o.requires:
 
@@ -481,7 +481,7 @@ libmTH.0.dylib: CMakeFiles/mTH.dir/generic/simd/convolve5x5_sse.c.o
 libmTH.0.dylib: CMakeFiles/mTH.dir/generic/simd/convolve5x5_avx.c.o
 libmTH.0.dylib: CMakeFiles/mTH.dir/build.make
 libmTH.0.dylib: CMakeFiles/mTH.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jpchen/torchjs/thlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C shared library libmTH.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C shared library libmTH.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mTH.dir/link.txt --verbose=$(VERBOSE)
 	$(CMAKE_COMMAND) -E cmake_symlink_library libmTH.0.dylib libmTH.0.dylib libmTH.dylib
 
@@ -517,6 +517,6 @@ CMakeFiles/mTH.dir/clean:
 .PHONY : CMakeFiles/mTH.dir/clean
 
 CMakeFiles/mTH.dir/depend:
-	cd /Users/jpchen/torchjs/thlib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jpchen/torchjs/thlib /Users/jpchen/torchjs/thlib /Users/jpchen/torchjs/thlib/build /Users/jpchen/torchjs/thlib/build /Users/jpchen/torchjs/thlib/build/CMakeFiles/mTH.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/jpchen/jstorch/torch.js/libTH/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jpchen/jstorch/torch.js/libTH /Users/jpchen/jstorch/torch.js/libTH /Users/jpchen/jstorch/torch.js/libTH/build /Users/jpchen/jstorch/torch.js/libTH/build /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/mTH.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mTH.dir/depend
 

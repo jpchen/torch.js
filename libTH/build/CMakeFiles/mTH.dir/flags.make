@@ -6,7 +6,7 @@ C_FLAGS = -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -
 
 C_DEFINES = -DHAVE_MMAP=1 -DHAVE_SHM_OPEN=1 -DHAVE_SHM_UNLINK=1 -DUSE_GCC_ATOMICS=1 -D_FILE_OFFSET_BITS=64 -DmTH_EXPORTS
 
-C_INCLUDES = -I/Users/jpchen/torchjs/thlib/build 
+C_INCLUDES = -I/Users/jpchen/jstorch/torch.js/libTH/build 
 
 # Custom flags: CMakeFiles/mTH.dir/generic/simd/convolve.c.o_FLAGS = -std=c99
 

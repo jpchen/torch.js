@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jpchen/torchjs/thlib
+# Install script for directory: /Users/jpchen/jstorch/torch.js/libTH
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,8 +29,8 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/Users/jpchen/torchjs/thlib/build/libmTH.0.dylib"
-    "/Users/jpchen/torchjs/thlib/build/libmTH.dylib"
+    "/Users/jpchen/jstorch/torch.js/libTH/build/libmTH.0.dylib"
+    "/Users/jpchen/jstorch/torch.js/libTH/build/libmTH.dylib"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmTH.0.dylib"
@@ -50,62 +50,62 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/TH" TYPE FILE FILES
-    "/Users/jpchen/torchjs/thlib/ccTH.h"
-    "/Users/jpchen/torchjs/thlib/THAllocator.h"
-    "/Users/jpchen/torchjs/thlib/THMath.h"
-    "/Users/jpchen/torchjs/thlib/THBlas.h"
-    "/Users/jpchen/torchjs/thlib/THDiskFile.h"
-    "/Users/jpchen/torchjs/thlib/THFile.h"
-    "/Users/jpchen/torchjs/thlib/THFilePrivate.h"
-    "/Users/jpchen/torchjs/thlib/build/THGeneral.h"
-    "/Users/jpchen/torchjs/thlib/THGenerateAllTypes.h"
-    "/Users/jpchen/torchjs/thlib/THGenerateFloatTypes.h"
-    "/Users/jpchen/torchjs/thlib/THGenerateIntTypes.h"
-    "/Users/jpchen/torchjs/thlib/THLapack.h"
-    "/Users/jpchen/torchjs/thlib/THLogAdd.h"
-    "/Users/jpchen/torchjs/thlib/THMemoryFile.h"
-    "/Users/jpchen/torchjs/thlib/THRandom.h"
-    "/Users/jpchen/torchjs/thlib/THStorage.h"
-    "/Users/jpchen/torchjs/thlib/THTensorExtra.h"
-    "/Users/jpchen/torchjs/thlib/THTensorApply.h"
-    "/Users/jpchen/torchjs/thlib/THTensorDimApply.h"
-    "/Users/jpchen/torchjs/thlib/THTensorMacros.h"
-    "/Users/jpchen/torchjs/thlib/THVector.h"
-    "/Users/jpchen/torchjs/thlib/THAtomic.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/ccTH.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THAllocator.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THMath.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THBlas.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THDiskFile.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THFile.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THFilePrivate.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/build/THGeneral.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THGenerateAllTypes.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THGenerateFloatTypes.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THGenerateIntTypes.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THLapack.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THLogAdd.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THMemoryFile.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THRandom.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THStorage.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THTensorExtra.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THTensorApply.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THTensorDimApply.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THTensorMacros.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THVector.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/THAtomic.h"
     )
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/TH/generic" TYPE FILE FILES
-    "/Users/jpchen/torchjs/thlib/generic/THBlas.c"
-    "/Users/jpchen/torchjs/thlib/generic/THBlas.h"
-    "/Users/jpchen/torchjs/thlib/generic/THLapack.c"
-    "/Users/jpchen/torchjs/thlib/generic/THLapack.h"
-    "/Users/jpchen/torchjs/thlib/generic/THStorage.c"
-    "/Users/jpchen/torchjs/thlib/generic/THStorage.h"
-    "/Users/jpchen/torchjs/thlib/generic/THStorageCopy.c"
-    "/Users/jpchen/torchjs/thlib/generic/THStorageCopy.h"
-    "/Users/jpchen/torchjs/thlib/generic/THTensor.c"
-    "/Users/jpchen/torchjs/thlib/generic/THTensor.h"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorExtraJS.c"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorExtraJS.h"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorConv.c"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorConv.h"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorCopy.c"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorCopy.h"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorLapack.c"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorLapack.h"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorMath.c"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorMath.h"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorRandom.c"
-    "/Users/jpchen/torchjs/thlib/generic/THTensorRandom.h"
-    "/Users/jpchen/torchjs/thlib/generic/THVectorDispatch.c"
-    "/Users/jpchen/torchjs/thlib/generic/THVector.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THBlas.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THBlas.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THLapack.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THLapack.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THStorage.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THStorage.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THStorageCopy.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THStorageCopy.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensor.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensor.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorExtraJS.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorExtraJS.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorConv.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorConv.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorCopy.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorCopy.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorLapack.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorLapack.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorMath.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorMath.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorRandom.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THTensorRandom.h"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THVectorDispatch.c"
+    "/Users/jpchen/jstorch/torch.js/libTH/generic/THVector.h"
     )
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/TH" TYPE FILE FILES "/Users/jpchen/torchjs/thlib/build/cmake-exports/THConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/TH" TYPE FILE FILES "/Users/jpchen/jstorch/torch.js/libTH/build/cmake-exports/THConfig.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -116,5 +116,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jpchen/torchjs/thlib/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jpchen/jstorch/torch.js/libTH/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is AppleClang, found in "/Users/jpchen/torchjs/thlib/build/CMakeFiles/3.7.2/CompilerIdC/a.out"
+The C compiler identification is AppleClang, found in "/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/3.7.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
@@ -23,34 +23,34 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is AppleClang, found in "/Users/jpchen/torchjs/thlib/build/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
+The CXX compiler identification is AppleClang, found in "/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_28def/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_28def.dir/build.make CMakeFiles/cmTC_28def.dir/build
-Building C object CMakeFiles/cmTC_28def.dir/testCCompiler.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_28def.dir/testCCompiler.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_28def
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28def.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_28def.dir/testCCompiler.c.o  -o cmTC_28def  
+Run Build Command:"/usr/bin/make" "cmTC_f1882/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f1882.dir/build.make CMakeFiles/cmTC_f1882.dir/build
+Building C object CMakeFiles/cmTC_f1882.dir/testCCompiler.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_f1882.dir/testCCompiler.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f1882
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1882.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f1882.dir/testCCompiler.c.o  -o cmTC_f1882  
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_90b71/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_90b71.dir/build.make CMakeFiles/cmTC_90b71.dir/build
-Building C object CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_90b71
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90b71.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o  -o cmTC_90b71   
+Run Build Command:"/usr/bin/make" "cmTC_f0c57/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f0c57.dir/build.make CMakeFiles/cmTC_f0c57.dir/build
+Building C object CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_f0c57
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0c57.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o  -o cmTC_f0c57   
 Apple LLVM version 6.0 (clang-600.0.56) (based on LLVM 3.5svn)
 Target: x86_64-apple-darwin13.4.0
 Thread model: posix
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTC_90b71 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTC_f0c57 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-241.9
 configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
 Library search paths:
@@ -63,19 +63,19 @@ Framework search paths:
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_90b71/fast"]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_90b71.dir/build.make CMakeFiles/cmTC_90b71.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_90b71]
-  ignore line: [/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90b71.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o  -o cmTC_90b71   ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f0c57/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f0c57.dir/build.make CMakeFiles/cmTC_f0c57.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_f0c57]
+  ignore line: [/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0c57.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o  -o cmTC_f0c57   ]
   ignore line: [Apple LLVM version 6.0 (clang-600.0.56) (based on LLVM 3.5svn)]
   ignore line: [Target: x86_64-apple-darwin13.4.0]
   ignore line: [Thread model: posix]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTC_90b71 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTC_f0c57 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-dynamic] ==> ignore
@@ -84,11 +84,11 @@ Parsed C implicit link information from above output:
     arg [-macosx_version_min] ==> ignore
     arg [10.9.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_90b71] ==> ignore
+    arg [cmTC_f0c57] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_90b71.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_f0c57.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lSystem] ==> lib [System]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
   Library search paths: [;/usr/lib;/usr/local/lib]
@@ -107,15 +107,15 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_afba2/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_afba2.dir/build.make CMakeFiles/cmTC_afba2.dir/build
-Building C object CMakeFiles/cmTC_afba2.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_afba2.dir/feature_tests.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_afba2
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afba2.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_afba2.dir/feature_tests.c.o  -o cmTC_afba2  
+Run Build Command:"/usr/bin/make" "cmTC_cba73/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cba73.dir/build.make CMakeFiles/cmTC_cba73.dir/build
+Building C object CMakeFiles/cmTC_cba73.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_cba73.dir/feature_tests.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cba73
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba73.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_cba73.dir/feature_tests.c.o  -o cmTC_cba73  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -125,15 +125,15 @@ Linking C executable cmTC_afba2
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bd86c/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_bd86c.dir/build.make CMakeFiles/cmTC_bd86c.dir/build
-Building C object CMakeFiles/cmTC_bd86c.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_bd86c.dir/feature_tests.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_bd86c
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd86c.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_bd86c.dir/feature_tests.c.o  -o cmTC_bd86c  
+Run Build Command:"/usr/bin/make" "cmTC_e9adf/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e9adf.dir/build.make CMakeFiles/cmTC_e9adf.dir/build
+Building C object CMakeFiles/cmTC_e9adf.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_e9adf.dir/feature_tests.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e9adf
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9adf.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e9adf.dir/feature_tests.c.o  -o cmTC_e9adf  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -143,15 +143,15 @@ Linking C executable cmTC_bd86c
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6e918/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6e918.dir/build.make CMakeFiles/cmTC_6e918.dir/build
-Building C object CMakeFiles/cmTC_6e918.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_6e918.dir/feature_tests.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6e918
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e918.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6e918.dir/feature_tests.c.o  -o cmTC_6e918  
+Run Build Command:"/usr/bin/make" "cmTC_c6575/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c6575.dir/build.make CMakeFiles/cmTC_c6575.dir/build
+Building C object CMakeFiles/cmTC_c6575.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_c6575.dir/feature_tests.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c6575
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6575.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c6575.dir/feature_tests.c.o  -o cmTC_c6575  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -159,31 +159,31 @@ Linking C executable cmTC_6e918
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a1bc1/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a1bc1.dir/build.make CMakeFiles/cmTC_a1bc1.dir/build
-Building CXX object CMakeFiles/cmTC_a1bc1.dir/testCXXCompiler.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_a1bc1.dir/testCXXCompiler.cxx.o -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_a1bc1
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1bc1.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a1bc1.dir/testCXXCompiler.cxx.o  -o cmTC_a1bc1  
+Run Build Command:"/usr/bin/make" "cmTC_946b3/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_946b3.dir/build.make CMakeFiles/cmTC_946b3.dir/build
+Building CXX object CMakeFiles/cmTC_946b3.dir/testCXXCompiler.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_946b3.dir/testCXXCompiler.cxx.o -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_946b3
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_946b3.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_946b3.dir/testCXXCompiler.cxx.o  -o cmTC_946b3  
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8cfdd/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_8cfdd.dir/build.make CMakeFiles/cmTC_8cfdd.dir/build
-Building CXX object CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_8cfdd
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cfdd.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_8cfdd   
+Run Build Command:"/usr/bin/make" "cmTC_56fd8/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_56fd8.dir/build.make CMakeFiles/cmTC_56fd8.dir/build
+Building CXX object CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_56fd8
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56fd8.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_56fd8   
 Apple LLVM version 6.0 (clang-600.0.56) (based on LLVM 3.5svn)
 Target: x86_64-apple-darwin13.4.0
 Thread model: posix
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTC_8cfdd -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTC_56fd8 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-241.9
 configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
 Library search paths:
@@ -196,19 +196,19 @@ Framework search paths:
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8cfdd/fast"]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_8cfdd.dir/build.make CMakeFiles/cmTC_8cfdd.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_8cfdd]
-  ignore line: [/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cfdd.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_8cfdd   ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_56fd8/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_56fd8.dir/build.make CMakeFiles/cmTC_56fd8.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_56fd8]
+  ignore line: [/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56fd8.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_56fd8   ]
   ignore line: [Apple LLVM version 6.0 (clang-600.0.56) (based on LLVM 3.5svn)]
   ignore line: [Target: x86_64-apple-darwin13.4.0]
   ignore line: [Thread model: posix]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTC_8cfdd -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTC_56fd8 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-dynamic] ==> ignore
@@ -217,11 +217,11 @@ Parsed CXX implicit link information from above output:
     arg [-macosx_version_min] ==> ignore
     arg [10.9.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8cfdd] ==> ignore
+    arg [cmTC_56fd8] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_8cfdd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_56fd8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-lSystem] ==> lib [System]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
@@ -241,15 +241,15 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5a168/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5a168.dir/build.make CMakeFiles/cmTC_5a168.dir/build
-Building CXX object CMakeFiles/cmTC_5a168.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++1y -o CMakeFiles/cmTC_5a168.dir/feature_tests.cxx.o -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5a168
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a168.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5a168.dir/feature_tests.cxx.o  -o cmTC_5a168  
+Run Build Command:"/usr/bin/make" "cmTC_4abea/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4abea.dir/build.make CMakeFiles/cmTC_4abea.dir/build
+Building CXX object CMakeFiles/cmTC_4abea.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++1y -o CMakeFiles/cmTC_4abea.dir/feature_tests.cxx.o -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4abea
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4abea.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4abea.dir/feature_tests.cxx.o  -o cmTC_4abea  
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -312,15 +312,15 @@ Linking CXX executable cmTC_5a168
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cf665/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cf665.dir/build.make CMakeFiles/cmTC_cf665.dir/build
-Building CXX object CMakeFiles/cmTC_cf665.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_cf665.dir/feature_tests.cxx.o -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_cf665
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf665.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_cf665.dir/feature_tests.cxx.o  -o cmTC_cf665  
+Run Build Command:"/usr/bin/make" "cmTC_ac365/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ac365.dir/build.make CMakeFiles/cmTC_ac365.dir/build
+Building CXX object CMakeFiles/cmTC_ac365.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_ac365.dir/feature_tests.cxx.o -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ac365
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac365.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ac365.dir/feature_tests.cxx.o  -o cmTC_ac365  
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -383,15 +383,15 @@ Linking CXX executable cmTC_cf665
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_96f9f/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_96f9f.dir/build.make CMakeFiles/cmTC_96f9f.dir/build
-Building CXX object CMakeFiles/cmTC_96f9f.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_96f9f.dir/feature_tests.cxx.o -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_96f9f
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96f9f.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_96f9f.dir/feature_tests.cxx.o  -o cmTC_96f9f  
+Run Build Command:"/usr/bin/make" "cmTC_d8bcf/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_d8bcf.dir/build.make CMakeFiles/cmTC_d8bcf.dir/build
+Building CXX object CMakeFiles/cmTC_d8bcf.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_d8bcf.dir/feature_tests.cxx.o -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d8bcf
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8bcf.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d8bcf.dir/feature_tests.cxx.o  -o cmTC_d8bcf  
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -452,15 +452,15 @@ Linking CXX executable cmTC_96f9f
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Performing C SOURCE FILE Test C_HAS_SSE1_1 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7c26b/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7c26b.dir/build.make CMakeFiles/cmTC_7c26b.dir/build
-Building C object CMakeFiles/cmTC_7c26b.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE1_1   -o CMakeFiles/cmTC_7c26b.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_7c26b
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c26b.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE1_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7c26b.dir/src.c.o  -o cmTC_7c26b  
+Run Build Command:"/usr/bin/make" "cmTC_3e3a6/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3e3a6.dir/build.make CMakeFiles/cmTC_3e3a6.dir/build
+Building C object CMakeFiles/cmTC_3e3a6.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE1_1   -o CMakeFiles/cmTC_3e3a6.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3e3a6
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e3a6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE1_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_3e3a6.dir/src.c.o  -o cmTC_3e3a6  
 
 Return value: 1
 Source file was:
@@ -475,15 +475,15 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test C_HAS_SSE2_1 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a53cb/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a53cb.dir/build.make CMakeFiles/cmTC_a53cb.dir/build
-Building C object CMakeFiles/cmTC_a53cb.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE2_1   -o CMakeFiles/cmTC_a53cb.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_a53cb
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a53cb.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE2_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a53cb.dir/src.c.o  -o cmTC_a53cb  
+Run Build Command:"/usr/bin/make" "cmTC_7fc06/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7fc06.dir/build.make CMakeFiles/cmTC_7fc06.dir/build
+Building C object CMakeFiles/cmTC_7fc06.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE2_1   -o CMakeFiles/cmTC_7fc06.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7fc06
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fc06.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE2_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7fc06.dir/src.c.o  -o cmTC_7fc06  
 
 Return value: 1
 Source file was:
@@ -498,15 +498,15 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test C_HAS_SSE3_1 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_075e2/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_075e2.dir/build.make CMakeFiles/cmTC_075e2.dir/build
-Building C object CMakeFiles/cmTC_075e2.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE3_1   -o CMakeFiles/cmTC_075e2.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_075e2
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_075e2.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE3_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_075e2.dir/src.c.o  -o cmTC_075e2  
+Run Build Command:"/usr/bin/make" "cmTC_7350a/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7350a.dir/build.make CMakeFiles/cmTC_7350a.dir/build
+Building C object CMakeFiles/cmTC_7350a.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE3_1   -o CMakeFiles/cmTC_7350a.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7350a
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7350a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE3_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7350a.dir/src.c.o  -o cmTC_7350a  
 
 Return value: 1
 Source file was:
@@ -521,22 +521,22 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test C_HAS_SSE4_1_2 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0f0de/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_0f0de.dir/build.make CMakeFiles/cmTC_0f0de.dir/build
-Building C object CMakeFiles/cmTC_0f0de.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE4_1_2 -msse4.1   -o CMakeFiles/cmTC_0f0de.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:22: warning: excess elements in vector initializer
+Run Build Command:"/usr/bin/make" "cmTC_fed82/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_fed82.dir/build.make CMakeFiles/cmTC_fed82.dir/build
+Building C object CMakeFiles/cmTC_fed82.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE4_1_2 -msse4.1   -o CMakeFiles/cmTC_fed82.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:22: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0};
                      ^
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:37: warning: excess elements in vector initializer
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:37: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0};
                                     ^
 2 warnings generated.
-Linking C executable cmTC_0f0de
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f0de.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE4_1_2 -msse4.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_0f0de.dir/src.c.o  -o cmTC_0f0de  
+Linking C executable cmTC_fed82
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fed82.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE4_1_2 -msse4.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_fed82.dir/src.c.o  -o cmTC_fed82  
 
 Return value: 1
 Source file was:
@@ -552,25 +552,25 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_HAS_SSE4_2_2 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_60d3a/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_60d3a.dir/build.make CMakeFiles/cmTC_60d3a.dir/build
-Building C object CMakeFiles/cmTC_60d3a.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE4_2_2 -msse4.2   -o CMakeFiles/cmTC_60d3a.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:22: warning: excess elements in vector initializer
+Run Build Command:"/usr/bin/make" "cmTC_567cf/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_567cf.dir/build.make CMakeFiles/cmTC_567cf.dir/build
+Building C object CMakeFiles/cmTC_567cf.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE4_2_2 -msse4.2   -o CMakeFiles/cmTC_567cf.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:22: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
                      ^
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:37: warning: excess elements in vector initializer
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:37: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
                                     ^
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:52: warning: excess elements in vector initializer
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:52: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
                                                    ^
 3 warnings generated.
-Linking C executable cmTC_60d3a
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60d3a.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE4_2_2 -msse4.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_60d3a.dir/src.c.o  -o cmTC_60d3a  
+Linking C executable cmTC_567cf
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_567cf.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_SSE4_2_2 -msse4.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_567cf.dir/src.c.o  -o cmTC_567cf  
 
 Return value: 1
 Source file was:
@@ -585,15 +585,15 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_HAS_AVX_2 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_80a18/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_80a18.dir/build.make CMakeFiles/cmTC_80a18.dir/build
-Building C object CMakeFiles/cmTC_80a18.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_AVX_2 -mavx   -o CMakeFiles/cmTC_80a18.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_80a18
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80a18.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_AVX_2 -mavx -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_80a18.dir/src.c.o  -o cmTC_80a18  
+Run Build Command:"/usr/bin/make" "cmTC_c0188/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c0188.dir/build.make CMakeFiles/cmTC_c0188.dir/build
+Building C object CMakeFiles/cmTC_c0188.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_AVX_2 -mavx   -o CMakeFiles/cmTC_c0188.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c0188
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0188.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DC_HAS_AVX_2 -mavx -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c0188.dir/src.c.o  -o cmTC_c0188  
 
 Return value: 1
 Source file was:
@@ -608,15 +608,15 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_SSE1_1 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_31197/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_31197.dir/build.make CMakeFiles/cmTC_31197.dir/build
-Building C object CMakeFiles/cmTC_31197.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE1_1   -o CMakeFiles/cmTC_31197.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_31197
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31197.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE1_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_31197.dir/src.c.o  -o cmTC_31197  
+Run Build Command:"/usr/bin/make" "cmTC_f43b0/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f43b0.dir/build.make CMakeFiles/cmTC_f43b0.dir/build
+Building C object CMakeFiles/cmTC_f43b0.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE1_1   -o CMakeFiles/cmTC_f43b0.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f43b0
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f43b0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE1_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f43b0.dir/src.c.o  -o cmTC_f43b0  
 
 Return value: 1
 Source file was:
@@ -631,15 +631,15 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test CXX_HAS_SSE2_1 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e4c5d/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e4c5d.dir/build.make CMakeFiles/cmTC_e4c5d.dir/build
-Building C object CMakeFiles/cmTC_e4c5d.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE2_1   -o CMakeFiles/cmTC_e4c5d.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_e4c5d
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4c5d.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE2_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e4c5d.dir/src.c.o  -o cmTC_e4c5d  
+Run Build Command:"/usr/bin/make" "cmTC_b7573/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b7573.dir/build.make CMakeFiles/cmTC_b7573.dir/build
+Building C object CMakeFiles/cmTC_b7573.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE2_1   -o CMakeFiles/cmTC_b7573.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b7573
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7573.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE2_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b7573.dir/src.c.o  -o cmTC_b7573  
 
 Return value: 1
 Source file was:
@@ -654,15 +654,15 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test CXX_HAS_SSE3_1 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1de47/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1de47.dir/build.make CMakeFiles/cmTC_1de47.dir/build
-Building C object CMakeFiles/cmTC_1de47.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE3_1   -o CMakeFiles/cmTC_1de47.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_1de47
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1de47.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE3_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1de47.dir/src.c.o  -o cmTC_1de47  
+Run Build Command:"/usr/bin/make" "cmTC_56000/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_56000.dir/build.make CMakeFiles/cmTC_56000.dir/build
+Building C object CMakeFiles/cmTC_56000.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE3_1   -o CMakeFiles/cmTC_56000.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_56000
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56000.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE3_1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_56000.dir/src.c.o  -o cmTC_56000  
 
 Return value: 1
 Source file was:
@@ -677,22 +677,22 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test CXX_HAS_SSE4_1_2 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_693f1/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_693f1.dir/build.make CMakeFiles/cmTC_693f1.dir/build
-Building C object CMakeFiles/cmTC_693f1.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE4_1_2 -msse4.1   -o CMakeFiles/cmTC_693f1.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:22: warning: excess elements in vector initializer
+Run Build Command:"/usr/bin/make" "cmTC_403f6/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_403f6.dir/build.make CMakeFiles/cmTC_403f6.dir/build
+Building C object CMakeFiles/cmTC_403f6.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE4_1_2 -msse4.1   -o CMakeFiles/cmTC_403f6.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:22: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0};
                      ^
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:37: warning: excess elements in vector initializer
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:37: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0};
                                     ^
 2 warnings generated.
-Linking C executable cmTC_693f1
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_693f1.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE4_1_2 -msse4.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_693f1.dir/src.c.o  -o cmTC_693f1  
+Linking C executable cmTC_403f6
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_403f6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE4_1_2 -msse4.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_403f6.dir/src.c.o  -o cmTC_403f6  
 
 Return value: 1
 Source file was:
@@ -708,25 +708,25 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_SSE4_2_2 succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ffd4b/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ffd4b.dir/build.make CMakeFiles/cmTC_ffd4b.dir/build
-Building C object CMakeFiles/cmTC_ffd4b.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE4_2_2 -msse4.2   -o CMakeFiles/cmTC_ffd4b.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:22: warning: excess elements in vector initializer
+Run Build Command:"/usr/bin/make" "cmTC_56b0a/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_56b0a.dir/build.make CMakeFiles/cmTC_56b0a.dir/build
+Building C object CMakeFiles/cmTC_56b0a.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE4_2_2 -msse4.2   -o CMakeFiles/cmTC_56b0a.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:22: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
                      ^
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:37: warning: excess elements in vector initializer
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:37: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
                                     ^
-/Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c:6:52: warning: excess elements in vector initializer
+/Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c:6:52: warning: excess elements in vector initializer
     __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
                                                    ^
 3 warnings generated.
-Linking C executable cmTC_ffd4b
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffd4b.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE4_2_2 -msse4.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ffd4b.dir/src.c.o  -o cmTC_ffd4b  
+Linking C executable cmTC_56b0a
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56b0a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCXX_HAS_SSE4_2_2 -msse4.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_56b0a.dir/src.c.o  -o cmTC_56b0a  
 
 Return value: 1
 Source file was:
@@ -741,15 +741,15 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test HAS_GCC_ATOMICS succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e07ee/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e07ee.dir/build.make CMakeFiles/cmTC_e07ee.dir/build
-Building C object CMakeFiles/cmTC_e07ee.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DHAS_GCC_ATOMICS   -o CMakeFiles/cmTC_e07ee.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_e07ee
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e07ee.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DHAS_GCC_ATOMICS -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e07ee.dir/src.c.o  -o cmTC_e07ee  
+Run Build Command:"/usr/bin/make" "cmTC_39a94/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_39a94.dir/build.make CMakeFiles/cmTC_39a94.dir/build
+Building C object CMakeFiles/cmTC_39a94.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DHAS_GCC_ATOMICS   -o CMakeFiles/cmTC_39a94.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_39a94
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39a94.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DHAS_GCC_ATOMICS -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_39a94.dir/src.c.o  -o cmTC_39a94  
 
 Return value: 1
 Source file was:
@@ -765,75 +765,75 @@ int main()
 }
 
 Determining if the include file sys/types.h exists passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ecffb/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ecffb.dir/build.make CMakeFiles/cmTC_ecffb.dir/build
-Building C object CMakeFiles/cmTC_ecffb.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2     -o CMakeFiles/cmTC_ecffb.dir/CheckIncludeFile.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_ecffb
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecffb.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ecffb.dir/CheckIncludeFile.c.o  -o cmTC_ecffb  
+Run Build Command:"/usr/bin/make" "cmTC_6e1e1/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6e1e1.dir/build.make CMakeFiles/cmTC_6e1e1.dir/build
+Building C object CMakeFiles/cmTC_6e1e1.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2     -o CMakeFiles/cmTC_6e1e1.dir/CheckIncludeFile.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6e1e1
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e1e1.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6e1e1.dir/CheckIncludeFile.c.o  -o cmTC_6e1e1  
 
 
 Determining if the include file stdint.h exists passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d42d7/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_d42d7.dir/build.make CMakeFiles/cmTC_d42d7.dir/build
-Building C object CMakeFiles/cmTC_d42d7.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2     -o CMakeFiles/cmTC_d42d7.dir/CheckIncludeFile.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_d42d7
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d42d7.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d42d7.dir/CheckIncludeFile.c.o  -o cmTC_d42d7  
+Run Build Command:"/usr/bin/make" "cmTC_27907/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_27907.dir/build.make CMakeFiles/cmTC_27907.dir/build
+Building C object CMakeFiles/cmTC_27907.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2     -o CMakeFiles/cmTC_27907.dir/CheckIncludeFile.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_27907
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27907.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_27907.dir/CheckIncludeFile.c.o  -o cmTC_27907  
 
 
 Determining if the include file stddef.h exists passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6ba41/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6ba41.dir/build.make CMakeFiles/cmTC_6ba41.dir/build
-Building C object CMakeFiles/cmTC_6ba41.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2     -o CMakeFiles/cmTC_6ba41.dir/CheckIncludeFile.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_6ba41
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ba41.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6ba41.dir/CheckIncludeFile.c.o  -o cmTC_6ba41  
+Run Build Command:"/usr/bin/make" "cmTC_910cb/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_910cb.dir/build.make CMakeFiles/cmTC_910cb.dir/build
+Building C object CMakeFiles/cmTC_910cb.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2     -o CMakeFiles/cmTC_910cb.dir/CheckIncludeFile.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_910cb
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_910cb.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_910cb.dir/CheckIncludeFile.c.o  -o cmTC_910cb  
 
 
 Determining size of void* passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_626ac/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_626ac.dir/build.make CMakeFiles/cmTC_626ac.dir/build
-Building C object CMakeFiles/cmTC_626ac.dir/SIZE_OF_VOIDP.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2     -o CMakeFiles/cmTC_626ac.dir/SIZE_OF_VOIDP.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CheckTypeSize/SIZE_OF_VOIDP.c
-Linking C executable cmTC_626ac
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_626ac.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_626ac.dir/SIZE_OF_VOIDP.c.o  -o cmTC_626ac  
+Run Build Command:"/usr/bin/make" "cmTC_f59ad/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f59ad.dir/build.make CMakeFiles/cmTC_f59ad.dir/build
+Building C object CMakeFiles/cmTC_f59ad.dir/SIZE_OF_VOIDP.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2     -o CMakeFiles/cmTC_f59ad.dir/SIZE_OF_VOIDP.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CheckTypeSize/SIZE_OF_VOIDP.c
+Linking C executable cmTC_f59ad
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f59ad.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f59ad.dir/SIZE_OF_VOIDP.c.o  -o cmTC_f59ad  
 
 
 Determining if the function sgemm_ exists passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_300da/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_300da.dir/build.make CMakeFiles/cmTC_300da.dir/build
-Building C object CMakeFiles/cmTC_300da.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_300da.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_300da
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_300da.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=sgemm_ -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_300da.dir/CheckFunctionExists.c.o  -o cmTC_300da  -framework Accelerate 
+Run Build Command:"/usr/bin/make" "cmTC_d0d80/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_d0d80.dir/build.make CMakeFiles/cmTC_d0d80.dir/build
+Building C object CMakeFiles/cmTC_d0d80.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_d0d80.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d0d80
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0d80.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=sgemm_ -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d0d80.dir/CheckFunctionExists.c.o  -o cmTC_d0d80  -framework Accelerate 
 
 
 Performing C SOURCE FILE Test BLAS_F2C_DOUBLE_WORKS succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5fda8/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5fda8.dir/build.make CMakeFiles/cmTC_5fda8.dir/build
-Building C object CMakeFiles/cmTC_5fda8.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DBLAS_F2C_DOUBLE_WORKS   -o CMakeFiles/cmTC_5fda8.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_5fda8
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fda8.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DBLAS_F2C_DOUBLE_WORKS -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5fda8.dir/src.c.o  -o cmTC_5fda8  -framework Accelerate 
+Run Build Command:"/usr/bin/make" "cmTC_009b5/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_009b5.dir/build.make CMakeFiles/cmTC_009b5.dir/build
+Building C object CMakeFiles/cmTC_009b5.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DBLAS_F2C_DOUBLE_WORKS   -o CMakeFiles/cmTC_009b5.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_009b5
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_009b5.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DBLAS_F2C_DOUBLE_WORKS -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_009b5.dir/src.c.o  -o cmTC_009b5  -framework Accelerate 
 
 Return value: 1
 Source file was:
@@ -851,63 +851,63 @@ int main() {
   exit((float)r != (float).1234);
 }
 Determining if the function cheev_ exists passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ea1b2/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ea1b2.dir/build.make CMakeFiles/cmTC_ea1b2.dir/build
-Building C object CMakeFiles/cmTC_ea1b2.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=cheev_   -o CMakeFiles/cmTC_ea1b2.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ea1b2
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea1b2.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=cheev_ -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ea1b2.dir/CheckFunctionExists.c.o  -o cmTC_ea1b2  -framework Accelerate 
+Run Build Command:"/usr/bin/make" "cmTC_16cb7/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_16cb7.dir/build.make CMakeFiles/cmTC_16cb7.dir/build
+Building C object CMakeFiles/cmTC_16cb7.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=cheev_   -o CMakeFiles/cmTC_16cb7.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_16cb7
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16cb7.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=cheev_ -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_16cb7.dir/CheckFunctionExists.c.o  -o cmTC_16cb7  -framework Accelerate 
 
 
 Determining if the function mmap exists passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b0e20/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b0e20.dir/build.make CMakeFiles/cmTC_b0e20.dir/build
-Building C object CMakeFiles/cmTC_b0e20.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=mmap   -o CMakeFiles/cmTC_b0e20.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_b0e20
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0e20.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=mmap -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b0e20.dir/CheckFunctionExists.c.o  -o cmTC_b0e20  -framework Accelerate 
+Run Build Command:"/usr/bin/make" "cmTC_072e9/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_072e9.dir/build.make CMakeFiles/cmTC_072e9.dir/build
+Building C object CMakeFiles/cmTC_072e9.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=mmap   -o CMakeFiles/cmTC_072e9.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_072e9
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_072e9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=mmap -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_072e9.dir/CheckFunctionExists.c.o  -o cmTC_072e9  -framework Accelerate 
 
 
 Determining if the function shm_open exists passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2c542/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_2c542.dir/build.make CMakeFiles/cmTC_2c542.dir/build
-Building C object CMakeFiles/cmTC_2c542.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=shm_open   -o CMakeFiles/cmTC_2c542.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_2c542
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c542.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=shm_open -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_2c542.dir/CheckFunctionExists.c.o  -o cmTC_2c542  -framework Accelerate 
+Run Build Command:"/usr/bin/make" "cmTC_5557e/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5557e.dir/build.make CMakeFiles/cmTC_5557e.dir/build
+Building C object CMakeFiles/cmTC_5557e.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=shm_open   -o CMakeFiles/cmTC_5557e.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5557e
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5557e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=shm_open -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5557e.dir/CheckFunctionExists.c.o  -o cmTC_5557e  -framework Accelerate 
 
 
 Determining if the function shm_unlink exists passed with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7d3a2/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7d3a2.dir/build.make CMakeFiles/cmTC_7d3a2.dir/build
-Building C object CMakeFiles/cmTC_7d3a2.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=shm_unlink   -o CMakeFiles/cmTC_7d3a2.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7d3a2
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d3a2.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=shm_unlink -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7d3a2.dir/CheckFunctionExists.c.o  -o cmTC_7d3a2  -framework Accelerate 
+Run Build Command:"/usr/bin/make" "cmTC_1a846/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1a846.dir/build.make CMakeFiles/cmTC_1a846.dir/build
+Building C object CMakeFiles/cmTC_1a846.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=shm_unlink   -o CMakeFiles/cmTC_1a846.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1a846
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a846.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=shm_unlink -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1a846.dir/CheckFunctionExists.c.o  -o cmTC_1a846  -framework Accelerate 
 
 
 Performing C SOURCE FILE Test C_HAS_inline succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9dddf/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9dddf.dir/build.make CMakeFiles/cmTC_9dddf.dir/build
-Building C object CMakeFiles/cmTC_9dddf.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DC_HAS_inline -Dinline=inline -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -o CMakeFiles/cmTC_9dddf.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_9dddf
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dddf.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DC_HAS_inline -Dinline=inline -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9dddf.dir/src.c.o  -o cmTC_9dddf  -framework Accelerate 
+Run Build Command:"/usr/bin/make" "cmTC_9ebf6/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9ebf6.dir/build.make CMakeFiles/cmTC_9ebf6.dir/build
+Building C object CMakeFiles/cmTC_9ebf6.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DC_HAS_inline -Dinline=inline -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2   -o CMakeFiles/cmTC_9ebf6.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9ebf6
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ebf6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DC_HAS_inline -Dinline=inline -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9ebf6.dir/src.c.o  -o cmTC_9ebf6  -framework Accelerate 
 
 Return value: 1
 Source file was:
@@ -923,15 +923,15 @@ Source file was:
          return 0;
        }
 Performing C SOURCE FILE Test C_HAS_THREAD succeeded with the following output:
-Change Dir: /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e8ae1/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e8ae1.dir/build.make CMakeFiles/cmTC_e8ae1.dir/build
-Building C object CMakeFiles/cmTC_e8ae1.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DC_HAS_THREAD   -o CMakeFiles/cmTC_e8ae1.dir/src.c.o   -c /Users/jpchen/torchjs/thlib/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_e8ae1
-/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8ae1.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DC_HAS_THREAD -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e8ae1.dir/src.c.o  -o cmTC_e8ae1  -framework Accelerate 
+Run Build Command:"/usr/bin/make" "cmTC_e6b43/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e6b43.dir/build.make CMakeFiles/cmTC_e6b43.dir/build
+Building C object CMakeFiles/cmTC_e6b43.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DC_HAS_THREAD   -o CMakeFiles/cmTC_e6b43.dir/src.c.o   -c /Users/jpchen/jstorch/torch.js/libTH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e6b43
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6b43.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DC_HAS_THREAD -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e6b43.dir/src.c.o  -o cmTC_e6b43  -framework Accelerate 
 
 Source file was:
 static __thread int x = 1; int main() { return x; }
