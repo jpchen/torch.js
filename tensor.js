@@ -573,7 +573,7 @@ Tensor.get_set = function(js_tensor, coords, val_or_tensor)
 
   var o_tensor = js_tensor.data
   // start with the clone
-  var tensor = THFloatTensor.newWiTHFloatTensor(o_tensor.ref()).deref()
+  var tensor = THFloatTensor.newWithTensor(o_tensor.ref()).deref()
 
   for(var dim=0; dim < dfinal; dim++)
   {
@@ -742,6 +742,37 @@ Tensor.prototype.max = function()
   return THFloatTensor.maxall(this.data.ref())
 }
 Tensor.prototype.maxreduce = Tensor.prototype.max
+
+
+Tensor.byte_comparison = function(byte_comp_fct)
+{
+  return function(adata, bdata, not_in_place, mval){
+    assert.ok(not_in_place, "In place equal doesn't make sense")
+
+    // we ignore in place, not inplace because it's stupid
+    var sz = Tensor.get_size(adata.data.ref())
+
+    var tcompare
+    if(typeof(bdata) == "number")
+    {
+      tcompare = THFloatTensor.newWithSize(sz.ref(), ref.NULL).deref()
+      THFloatTensor.fill(tcompare.ref(), bdata)
+    }
+    else
+    {
+      assert.ok(adata.type == bdata.type, "Checking tensor equal must be same tensor type")
+    }
+
+    var bempty, bbtensor = Tensor.byte_sizeof(sz, ttype)
+    THFloatTensor[byte_comp_fct](bempty.ref(), adata.data.ref(), tcompare.ref())
+
+    // currently handled stupidly
+    var bb = adata.refClone()
+    bb.override(bb, adata.dims.slice(0))
+    bb.type = "Byte"
+    return bb
+  }
+}
 
 Tensor.byte_sizeof = function(sz, ttype)
 {
@@ -995,35 +1026,6 @@ addOperationOrComponentOpMethod("pow_tensors", "pow", "cpow", true)
 addBinaryMethod("pow", "pow_tensors")
 
 
-Tensor.byte_comparison = function(byte_comp_fct)
-{
-  return function(adata, bdata, not_in_place, mval){
-    assert.ok(not_in_place, "In place equal doesn't make sense")
-
-    // we ignore in place, not inplace because it's stupid
-    var sz = Tensor.get_size(adata.data.ref())
-
-    var tcompare
-    if(typeof(bdata) == "number")
-    {
-      tcompare = THFloatTensor.newWithSize(sz.ref(), ref.NULL).deref()
-      THFloatTensor.fill(tcompare.ref(), bdata)
-    }
-    else
-    {
-      assert.ok(adata.type == bdata.type, "Checking tensor equal must be same tensor type")
-    }
-
-    var bempty, bbtensor = Tensor.byte_sizeof(sz, ttype)
-    THFloatTensor[byte_comp_fct](bempty.ref(), adata.data.ref(), tcompare.ref())
-
-    // currently handled stupidly
-    var bb = adata.refClone()
-    bb.override(bb, adata.dims.slice(0))
-    bb.type = "Byte"
-    return bb
-  }
-}
 
 // Byte methods for comparisons
 // a little tricky because cuda has no byte tensor for comparisons -- just use CudaFloat tensors

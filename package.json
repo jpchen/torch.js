@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Torch Tensor library in nodejs",
   "keywords": ["torch", "ffi", "bindings", "tensor"],
-  "author": "Soumith Chintala <soumith@gmail.com>",
+  "author": "Jonathan P. Chen>",
   "main": "TH.js",
   "dependencies": {
     "ffi": ">= 0",
