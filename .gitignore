@@ -2,3 +2,4 @@
 libTH/build
 libTH/*.dylib
 *.dylib
+node_modules
