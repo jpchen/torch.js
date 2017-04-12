@@ -1,0 +1,744 @@
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4fa99/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4fa99.dir/build.make CMakeFiles/cmTC_4fa99.dir/build
+Building C object CMakeFiles/cmTC_4fa99.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp=libomp   -o CMakeFiles/cmTC_4fa99.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-fopenmp=libomp'
+make[1]: *** [CMakeFiles/cmTC_4fa99.dir/src.c.o] Error 1
+make: *** [cmTC_4fa99/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_69042/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_69042.dir/build.make CMakeFiles/cmTC_69042.dir/build
+Building C object CMakeFiles/cmTC_69042.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTC_69042.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_69042.dir/src.c.o] Error 1
+make: *** [cmTC_69042/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1aa36/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1aa36.dir/build.make CMakeFiles/cmTC_1aa36.dir/build
+Building C object CMakeFiles/cmTC_1aa36.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_1aa36.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+clang: warning: argument unused during compilation: '-fopenmp'
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_1aa36.dir/src.c.o] Error 1
+make: *** [cmTC_1aa36/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca47f/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ca47f.dir/build.make CMakeFiles/cmTC_ca47f.dir/build
+Building C object CMakeFiles/cmTC_ca47f.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTC_ca47f.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '/openmp'
+make[1]: *** [CMakeFiles/cmTC_ca47f.dir/src.c.o] Error 1
+make: *** [cmTC_ca47f/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c2122/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c2122.dir/build.make CMakeFiles/cmTC_c2122.dir/build
+Building C object CMakeFiles/cmTC_c2122.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTC_c2122.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-Qopenmp'
+make[1]: *** [CMakeFiles/cmTC_c2122.dir/src.c.o] Error 1
+make: *** [cmTC_c2122/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ab61/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_2ab61.dir/build.make CMakeFiles/cmTC_2ab61.dir/build
+Building C object CMakeFiles/cmTC_2ab61.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTC_2ab61.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2ab61.dir/src.c.o] Error 1
+make: *** [cmTC_2ab61/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6d1f5/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6d1f5.dir/build.make CMakeFiles/cmTC_6d1f5.dir/build
+Building C object CMakeFiles/cmTC_6d1f5.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTC_6d1f5.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+clang: error: language not recognized: 'openmp'
+clang: warning: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c: 'linker' input unused
+make[1]: *** [CMakeFiles/cmTC_6d1f5.dir/src.c.o] Error 1
+make: *** [cmTC_6d1f5/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_43da8/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_43da8.dir/build.make CMakeFiles/cmTC_43da8.dir/build
+Building C object CMakeFiles/cmTC_43da8.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTC_43da8.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '+Oopenmp'
+make[1]: *** [CMakeFiles/cmTC_43da8.dir/src.c.o] Error 1
+make: *** [cmTC_43da8/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9bca3/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9bca3.dir/build.make CMakeFiles/cmTC_9bca3.dir/build
+Building C object CMakeFiles/cmTC_9bca3.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTC_9bca3.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-qsmp'
+make[1]: *** [CMakeFiles/cmTC_9bca3.dir/src.c.o] Error 1
+make: *** [cmTC_9bca3/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_92780/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_92780.dir/build.make CMakeFiles/cmTC_92780.dir/build
+Building C object CMakeFiles/cmTC_92780.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTC_92780.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-mp'
+make[1]: *** [CMakeFiles/cmTC_92780.dir/src.c.o] Error 1
+make: *** [cmTC_92780/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ea49b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ea49b.dir/build.make CMakeFiles/cmTC_ea49b.dir/build
+Building CXX object CMakeFiles/cmTC_ea49b.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp=libomp   -o CMakeFiles/cmTC_ea49b.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-fopenmp=libomp'
+make[1]: *** [CMakeFiles/cmTC_ea49b.dir/src.cxx.o] Error 1
+make: *** [cmTC_ea49b/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2290c/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_2290c.dir/build.make CMakeFiles/cmTC_2290c.dir/build
+Building CXX object CMakeFiles/cmTC_2290c.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTC_2290c.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2290c.dir/src.cxx.o] Error 1
+make: *** [cmTC_2290c/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4e13b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4e13b.dir/build.make CMakeFiles/cmTC_4e13b.dir/build
+Building CXX object CMakeFiles/cmTC_4e13b.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_4e13b.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+clang: warning: argument unused during compilation: '-fopenmp'
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4e13b.dir/src.cxx.o] Error 1
+make: *** [cmTC_4e13b/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9623c/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9623c.dir/build.make CMakeFiles/cmTC_9623c.dir/build
+Building CXX object CMakeFiles/cmTC_9623c.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTC_9623c.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: no such file or directory: '/openmp'
+make[1]: *** [CMakeFiles/cmTC_9623c.dir/src.cxx.o] Error 1
+make: *** [cmTC_9623c/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f4061/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f4061.dir/build.make CMakeFiles/cmTC_f4061.dir/build
+Building CXX object CMakeFiles/cmTC_f4061.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTC_f4061.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-Qopenmp'
+make[1]: *** [CMakeFiles/cmTC_f4061.dir/src.cxx.o] Error 1
+make: *** [cmTC_f4061/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74a59/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_74a59.dir/build.make CMakeFiles/cmTC_74a59.dir/build
+Building CXX object CMakeFiles/cmTC_74a59.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTC_74a59.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_74a59.dir/src.cxx.o] Error 1
+make: *** [cmTC_74a59/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fc97b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_fc97b.dir/build.make CMakeFiles/cmTC_fc97b.dir/build
+Building CXX object CMakeFiles/cmTC_fc97b.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTC_fc97b.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: language not recognized: 'openmp'
+clang: warning: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx: 'linker' input unused
+make[1]: *** [CMakeFiles/cmTC_fc97b.dir/src.cxx.o] Error 1
+make: *** [cmTC_fc97b/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_272e6/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_272e6.dir/build.make CMakeFiles/cmTC_272e6.dir/build
+Building CXX object CMakeFiles/cmTC_272e6.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTC_272e6.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: no such file or directory: '+Oopenmp'
+make[1]: *** [CMakeFiles/cmTC_272e6.dir/src.cxx.o] Error 1
+make: *** [cmTC_272e6/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_371fc/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_371fc.dir/build.make CMakeFiles/cmTC_371fc.dir/build
+Building CXX object CMakeFiles/cmTC_371fc.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTC_371fc.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-qsmp'
+make[1]: *** [CMakeFiles/cmTC_371fc.dir/src.cxx.o] Error 1
+make: *** [cmTC_371fc/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9932b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9932b.dir/build.make CMakeFiles/cmTC_9932b.dir/build
+Building CXX object CMakeFiles/cmTC_9932b.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTC_9932b.dir/src.cxx.o -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-mp'
+make[1]: *** [CMakeFiles/cmTC_9932b.dir/src.cxx.o] Error 1
+make: *** [cmTC_9932b/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test C_HAS_SSE4_1_1 failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4fbdd/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4fbdd.dir/build.make CMakeFiles/cmTC_4fbdd.dir/build
+Building C object CMakeFiles/cmTC_4fbdd.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE4_1_1   -o CMakeFiles/cmTC_4fbdd.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+In file included from /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include/smmintrin.h:28:2: error: "SSE4.1 instruction set not enabled"
+#error "SSE4.1 instruction set not enabled"
+ ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:6:5: error: use of undeclared identifier '__m128i'
+    __m128i a = {0,0,0,0}, b = {0,0,0,0};
+    ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:5: error: use of undeclared identifier '__m128i'
+    __m128i res = _mm_max_epi8(a, b);
+    ^
+3 errors generated.
+make[1]: *** [CMakeFiles/cmTC_4fbdd.dir/src.c.o] Error 1
+make: *** [cmTC_4fbdd/fast] Error 2
+
+Return value: 1
+Source file was:
+
+  #include <smmintrin.h>
+
+  int main ()
+  {
+    __m128i a = {0,0,0,0}, b = {0,0,0,0};
+    __m128i res = _mm_max_epi8(a, b);
+
+    return 0;
+  }
+
+Performing C SOURCE FILE Test C_HAS_SSE4_2_1 failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45b81/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_45b81.dir/build.make CMakeFiles/cmTC_45b81.dir/build
+Building C object CMakeFiles/cmTC_45b81.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_SSE4_2_1   -o CMakeFiles/cmTC_45b81.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+In file included from /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include/nmmintrin.h:28:2: error: "SSE4.2 instruction set not enabled"
+#error "SSE4.2 instruction set not enabled"
+ ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:6:5: error: use of undeclared identifier '__m128i'
+    __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
+    ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:5: error: use of undeclared identifier 'c'
+    c = _mm_cmpgt_epi64(a, b);
+    ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:9: warning: implicit declaration of function '_mm_cmpgt_epi64' is invalid in C99 [-Wimplicit-function-declaration]
+    c = _mm_cmpgt_epi64(a, b);
+        ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:25: error: use of undeclared identifier 'a'
+    c = _mm_cmpgt_epi64(a, b);
+                        ^
+1 warning and 4 errors generated.
+make[1]: *** [CMakeFiles/cmTC_45b81.dir/src.c.o] Error 1
+make: *** [cmTC_45b81/fast] Error 2
+
+Return value: 1
+Source file was:
+
+  #include <nmmintrin.h>
+
+  int main()
+  {
+    __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
+    c = _mm_cmpgt_epi64(a, b);
+    return 0;
+  }
+
+Performing C SOURCE FILE Test C_HAS_AVX_1 failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0accc/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_0accc.dir/build.make CMakeFiles/cmTC_0accc.dir/build
+Building C object CMakeFiles/cmTC_0accc.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DC_HAS_AVX_1   -o CMakeFiles/cmTC_0accc.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:6:6: error: use of undeclared identifier '__m256'
+     __m256 a;
+     ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:5: error: use of undeclared identifier 'a'
+    a = _mm256_set1_ps(0);
+    ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:9: warning: implicit declaration of function '_mm256_set1_ps' is invalid in C99 [-Wimplicit-function-declaration]
+    a = _mm256_set1_ps(0);
+        ^
+1 warning and 2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_0accc.dir/src.c.o] Error 1
+make: *** [cmTC_0accc/fast] Error 2
+
+Return value: 1
+Source file was:
+
+  #include <immintrin.h>
+
+  int main()
+  {
+     __m256 a;
+    a = _mm256_set1_ps(0);
+    return 0;
+  }
+
+Performing C SOURCE FILE Test CXX_HAS_SSE4_1_1 failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_392da/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_392da.dir/build.make CMakeFiles/cmTC_392da.dir/build
+Building C object CMakeFiles/cmTC_392da.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE4_1_1   -o CMakeFiles/cmTC_392da.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+In file included from /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include/smmintrin.h:28:2: error: "SSE4.1 instruction set not enabled"
+#error "SSE4.1 instruction set not enabled"
+ ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:6:5: error: use of undeclared identifier '__m128i'
+    __m128i a = {0,0,0,0}, b = {0,0,0,0};
+    ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:5: error: use of undeclared identifier '__m128i'
+    __m128i res = _mm_max_epi8(a, b);
+    ^
+3 errors generated.
+make[1]: *** [CMakeFiles/cmTC_392da.dir/src.c.o] Error 1
+make: *** [cmTC_392da/fast] Error 2
+
+Return value: 1
+Source file was:
+
+  #include <smmintrin.h>
+
+  int main ()
+  {
+    __m128i a = {0,0,0,0}, b = {0,0,0,0};
+    __m128i res = _mm_max_epi8(a, b);
+
+    return 0;
+  }
+
+Performing C SOURCE FILE Test CXX_HAS_SSE4_2_1 failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4dfc8/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4dfc8.dir/build.make CMakeFiles/cmTC_4dfc8.dir/build
+Building C object CMakeFiles/cmTC_4dfc8.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCXX_HAS_SSE4_2_1   -o CMakeFiles/cmTC_4dfc8.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+In file included from /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include/nmmintrin.h:28:2: error: "SSE4.2 instruction set not enabled"
+#error "SSE4.2 instruction set not enabled"
+ ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:6:5: error: use of undeclared identifier '__m128i'
+    __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
+    ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:5: error: use of undeclared identifier 'c'
+    c = _mm_cmpgt_epi64(a, b);
+    ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:9: warning: implicit declaration of function '_mm_cmpgt_epi64' is invalid in C99 [-Wimplicit-function-declaration]
+    c = _mm_cmpgt_epi64(a, b);
+        ^
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:7:25: error: use of undeclared identifier 'a'
+    c = _mm_cmpgt_epi64(a, b);
+                        ^
+1 warning and 4 errors generated.
+make[1]: *** [CMakeFiles/cmTC_4dfc8.dir/src.c.o] Error 1
+make: *** [cmTC_4dfc8/fast] Error 2
+
+Return value: 1
+Source file was:
+
+  #include <nmmintrin.h>
+
+  int main()
+  {
+    __m128i a = {0,0,0,0}, b = {0,0,0,0}, c = {0,0,0,0};
+    c = _mm_cmpgt_epi64(a, b);
+    return 0;
+  }
+
+Performing C SOURCE FILE Test HAS_C11_ATOMICS failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b1a93/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b1a93.dir/build.make CMakeFiles/cmTC_b1a93.dir/build
+Building C object CMakeFiles/cmTC_b1a93.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DHAS_C11_ATOMICS   -o CMakeFiles/cmTC_b1a93.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+/Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'stdatomic.h' file not found
+#include <stdatomic.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_b1a93.dir/src.c.o] Error 1
+make: *** [cmTC_b1a93/fast] Error 2
+
+Return value: 1
+Source file was:
+
+#include <stdatomic.h>
+int main()
+{
+  int a;
+  int oa;
+  atomic_store(&a, 1);
+  atomic_fetch_add(&a, 1);
+  oa = atomic_load(&a);
+  if(!atomic_compare_exchange_strong(&a, &oa, 3))
+    return -1;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAS_MSC_ATOMICS failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2199f/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_2199f.dir/build.make CMakeFiles/cmTC_2199f.dir/build
+Building C object CMakeFiles/cmTC_2199f.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DHAS_MSC_ATOMICS   -o CMakeFiles/cmTC_2199f.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+In file included from /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c:2:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include/intrin.h:26:15: fatal error: 'Intrin.h' file not found
+#include_next <Intrin.h>
+              ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2199f.dir/src.c.o] Error 1
+make: *** [cmTC_2199f/fast] Error 2
+
+Return value: 1
+Source file was:
+
+#include <intrin.h>
+int main()
+{
+  long a;
+  _InterlockedExchange(&a, 1);
+  _InterlockedExchangeAdd(&a, 1);
+  if(_InterlockedCompareExchange(&a, 3, 2) != 2)
+    return -1;
+  return 0;
+}
+
+Performing C SOURCE FILE Test BLAS_F2C_FLOAT_WORKS failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_398ec/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_398ec.dir/build.make CMakeFiles/cmTC_398ec.dir/build
+Building C object CMakeFiles/cmTC_398ec.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DBLAS_F2C_FLOAT_WORKS   -o CMakeFiles/cmTC_398ec.dir/src.c.o   -c /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_398ec
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_398ec.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DBLAS_F2C_FLOAT_WORKS -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_398ec.dir/src.c.o  -o cmTC_398ec  -framework Accelerate 
+
+Return value: 1
+Source file was:
+
+#include <stdlib.h>
+#include <stdio.h>
+float x[4] = { 1, 2, 3, 4 };
+float y[4] = { .1, .01, .001, .0001 };
+int four = 4;
+int one = 1;
+extern float sdot_();
+int main() {
+  int i;
+  double r = sdot_(&four, x, &one, y, &one);
+  exit((float)r != (float).1234);
+}
+Determining if the function malloc_usable_size exists failed with the following output:
+Change Dir: /Volumes/256GHD/Work/paultorchjs/torch.js/thlib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2fee6/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_2fee6.dir/build.make CMakeFiles/cmTC_2fee6.dir/build
+Building C object CMakeFiles/cmTC_2fee6.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=malloc_usable_size   -o CMakeFiles/cmTC_2fee6.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2fee6
+/usr/local/Cellar/cmake/3.7.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fee6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DUSE_AVX -msse4.2 -DUSE_SSE4_2 -msse4.1 -DUSE_SSE4_1   -DUSE_SSE3   -DUSE_SSE2  -DCHECK_FUNCTION_EXISTS=malloc_usable_size -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_2fee6.dir/CheckFunctionExists.c.o  -o cmTC_2fee6  -framework Accelerate 
+Undefined symbols for architecture x86_64:
+  "_malloc_usable_size", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_2fee6] Error 1
+make: *** [cmTC_2fee6/fast] Error 2
+
+
