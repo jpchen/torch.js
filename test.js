@@ -4,16 +4,15 @@ var TH = ffith.TH
 console.log('creating new 10-element tensor')
 var tensor1=TH.THFloatTensor_newWithSize1d(10)
 console.log('filling tensor with 0.15')
-for (i=0; i < 10; ++i) {
-    console.log("BEFORE", TH.THFloatTensor_get1d(tensor1, i))
-}
+// for (i=0; i < 10; ++i) {
+//     console.log("BEFORE", TH.THFloatTensor_get1d(tensor1, i))
+// }
 TH.THFloatTensor_fill(tensor1, 0.15)
 
 console.log('printing tensor')
-for (i=0; i < 10; ++i) {
-    console.log("AFTER", TH.THFloatTensor_get1d(tensor1, i))
-}
-return
+// for (i=0; i < 10; ++i) {
+//     console.log("AFTER", TH.THFloatTensor_get1d(tensor1, i))
+// }
 // Benchmarking ffi overheads
 var SZ1 = 2
 var SZ2 //= 10
@@ -33,13 +32,7 @@ function creatv(SZ1, SZ2, SZ3, isvec) {
    	t = TH.THFloatTensor_newWithSize2d(SZ1, SZ2)      
    	}
    else {
-       for (var i=0; i < 2; ++i) {
-               console.log("avant", TH.THFloatTensor_get1d(t, i));
-       }
    	   t = TH.THFloatTensor_newWithSize1d(SZ1);
-        for (var i=0; i < 2; ++i) {
-                console.log("after", TH.THFloatTensor_get1d(t, i));
-        }
    }   
    TH.THFloatTensor_fill(t, 0.15)
    return t
