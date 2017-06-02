@@ -3543,6 +3543,11 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     THFloatTensorPtr,
     THFloatTensorPtr,
   ]],
+  THFloatTensor_dx_abs: [ref.types.void, [
+    THFloatTensorPtr,
+    THFloatTensorPtr,
+    THFloatTensorPtr,
+  ]],
   THFloatTensor_fctapply: [ref.types.void, [
     THFloatTensorPtr,
     THFloatTensor_jscallback,
