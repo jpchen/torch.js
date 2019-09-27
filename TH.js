@@ -8,10 +8,6 @@ var voidPtr = ref.refType(ref.types.void);
 exports.CONSTANTS = {
 };
 
-var THFloatTensor_jscallback = exports.THFloatTensor_jscallback = FFI.Function(ref.types.float, [
-  ref.types.float,
-]);
-var THFloatTensor_jscallbackPtr = exports.THFloatTensor_jscallbackPtr = ref.refType(THFloatTensor_jscallback);
 var THErrorHandlerFunction = exports.THErrorHandlerFunction = FFI.Function(ref.types.void, [
   ref.types.CString,
   voidPtr,
@@ -214,8 +210,7 @@ var THHalfTensorPtr = exports.THHalfTensorPtr = ref.refType(THHalfTensor);
 var THFile = exports.THFile = voidPtr;
 var THFilePtr = exports.THFilePtr = ref.refType(THFile);
 
-// exports.TH = new FFI.Library('libTH', {
-exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH', {
+exports.TH = new FFI.Library('libTH', {
   THLog1p: [ref.types.double, [
     ref.types.double,
   ]],
@@ -223,18 +218,18 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     THErrorHandlerFunction,
     voidPtr,
   ]],
-  // THSetDefaultErrorHandler: [ref.types.void, [
-  //   THErrorHandlerFunction,
-  //   voidPtr,
-  // ]],
+  THSetDefaultErrorHandler: [ref.types.void, [
+    THErrorHandlerFunction,
+    voidPtr,
+  ]],
   THSetArgErrorHandler: [ref.types.void, [
     THArgErrorHandlerFunction,
     voidPtr,
   ]],
-  // THSetDefaultArgErrorHandler: [ref.types.void, [
-  //   THArgErrorHandlerFunction,
-  //   voidPtr,
-  // ]],
+  THSetDefaultArgErrorHandler: [ref.types.void, [
+    THArgErrorHandlerFunction,
+    voidPtr,
+  ]],
   THAlloc: [voidPtr, [
     ref.types.long,
   ]],
@@ -252,13 +247,13 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
   THHeapUpdate: [ref.types.void, [
     ref.types.long,
   ]],
-  // THSetNumThreads: [ref.types.void, [
-  //   ref.types.int32,
-  // ]],
-  // THGetNumThreads: [ref.types.int32, [
-  // ]],
-  // THGetNumCores: [ref.types.int32, [
-  // ]],
+  THSetNumThreads: [ref.types.void, [
+    ref.types.int32,
+  ]],
+  THGetNumThreads: [ref.types.int32, [
+  ]],
+  THGetNumCores: [ref.types.int32, [
+  ]],
   THByteBlas_swap: [ref.types.void, [
     ref.types.long,
     ref.refType(ref.types.uchar),
@@ -777,60 +772,60 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     ref.refType(ref.types.double),
     ref.types.long,
   ]],
-  // THAtomicSet: [ref.types.void, [
-  //   ref.refType(ref.types.int32),
-  //   ref.types.int32,
-  // ]],
-  // THAtomicGet: [ref.types.int32, [
-  //   ref.refType(ref.types.int32),
-  // ]],
-  // THAtomicAdd: [ref.types.int32, [
-  //   ref.refType(ref.types.int32),
-  //   ref.types.int32,
-  // ]],
-  // THAtomicCompareAndSwap: [ref.types.int32, [
-  //   ref.refType(ref.types.int32),
-  //   ref.types.int32,
-  //   ref.types.int32,
-  // ]],
-  // THAtomicIncrementRef: [ref.types.void, [
-  //   ref.refType(ref.types.int32),
-  // ]],
-  // THAtomicDecrementRef: [ref.types.int32, [
-  //   ref.refType(ref.types.int32),
-  // ]],
-  // THAtomicSetLong: [ref.types.void, [
-  //   ref.refType(ref.types.long),
-  //   ref.types.long,
-  // ]],
-  // THAtomicGetLong: [ref.types.long, [
-  //   ref.refType(ref.types.long),
-  // ]],
-  // THAtomicAddLong: [ref.types.long, [
-  //   ref.refType(ref.types.long),
-  //   ref.types.long,
-  // ]],
-  // THAtomicCompareAndSwapLong: [ref.types.long, [
-  //   ref.refType(ref.types.long),
-  //   ref.types.long,
-  //   ref.types.long,
-  // ]],
-  // THAtomicSetPtrdiff: [ref.types.void, [
-  //   ptrdiff_t,
-  //   ref.types.long,
-  // ]],
-  // THAtomicGetPtrdiff: [ref.types.long, [
-  //   ptrdiff_tPtr,
-  // ]],
-  // THAtomicAddPtrdiff: [ref.types.long, [
-  //   ptrdiff_tPtr,
-  //   ref.types.long,
-  // ]],
-  // THAtomicCompareAndSwapPtrdiff: [ref.types.long, [
-  //   ptrdiff_tPtr,
-  //   ref.types.long,
-  //   ref.types.long,
-  // ]],
+  THAtomicSet: [ref.types.void, [
+    ref.refType(ref.types.int32),
+    ref.types.int32,
+  ]],
+  THAtomicGet: [ref.types.int32, [
+    ref.refType(ref.types.int32),
+  ]],
+  THAtomicAdd: [ref.types.int32, [
+    ref.refType(ref.types.int32),
+    ref.types.int32,
+  ]],
+  THAtomicCompareAndSwap: [ref.types.int32, [
+    ref.refType(ref.types.int32),
+    ref.types.int32,
+    ref.types.int32,
+  ]],
+  THAtomicIncrementRef: [ref.types.void, [
+    ref.refType(ref.types.int32),
+  ]],
+  THAtomicDecrementRef: [ref.types.int32, [
+    ref.refType(ref.types.int32),
+  ]],
+  THAtomicSetLong: [ref.types.void, [
+    ref.refType(ref.types.long),
+    ref.types.long,
+  ]],
+  THAtomicGetLong: [ref.types.long, [
+    ref.refType(ref.types.long),
+  ]],
+  THAtomicAddLong: [ref.types.long, [
+    ref.refType(ref.types.long),
+    ref.types.long,
+  ]],
+  THAtomicCompareAndSwapLong: [ref.types.long, [
+    ref.refType(ref.types.long),
+    ref.types.long,
+    ref.types.long,
+  ]],
+  THAtomicSetPtrdiff: [ref.types.void, [
+    ptrdiff_t,
+    ref.types.long,
+  ]],
+  THAtomicGetPtrdiff: [ref.types.long, [
+    ptrdiff_tPtr,
+  ]],
+  THAtomicAddPtrdiff: [ref.types.long, [
+    ptrdiff_tPtr,
+    ref.types.long,
+  ]],
+  THAtomicCompareAndSwapPtrdiff: [ref.types.long, [
+    ptrdiff_tPtr,
+    ref.types.long,
+    ref.types.long,
+  ]],
   THByteVector_fill: [ref.types.void, [
     ref.refType(ref.types.uchar),
     ref.types.uchar,
@@ -1733,6 +1728,92 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     THDoubleStoragePtr,
     ref.types.double,
   ]],
+  THHalfStorage_data: [THHalf, [
+    THHalfStoragePtr,
+  ]],
+  THHalfStorage_size: [ref.types.long, [
+    THHalfStoragePtr,
+  ]],
+  THHalfStorage_elementSize: [ref.types.ulong, [
+  ]],
+  THHalfStorage_set: [ref.types.void, [
+    THHalfStoragePtr,
+    ref.types.long,
+    THHalf,
+  ]],
+  THHalfStorage_get: [THHalf, [
+    THHalfStoragePtr,
+    ref.types.long,
+  ]],
+  THHalfStorage_new: [THHalfStoragePtr, [
+  ]],
+  THHalfStorage_newWithSize: [THHalfStoragePtr, [
+    ref.types.long,
+  ]],
+  THHalfStorage_newWithSize1: [THHalfStoragePtr, [
+    THHalf,
+  ]],
+  THHalfStorage_newWithSize2: [THHalfStoragePtr, [
+    THHalf,
+    THHalf,
+  ]],
+  THHalfStorage_newWithSize3: [THHalfStoragePtr, [
+    THHalf,
+    THHalf,
+    THHalf,
+  ]],
+  THHalfStorage_newWithSize4: [THHalfStoragePtr, [
+    THHalf,
+    THHalf,
+    THHalf,
+    THHalf,
+  ]],
+  THHalfStorage_newWithMapping: [THHalfStoragePtr, [
+    ref.types.CString,
+    ref.types.long,
+    ref.types.int32,
+  ]],
+  THHalfStorage_newWithData: [THHalfStoragePtr, [
+    THHalfPtr,
+    ref.types.long,
+  ]],
+  THHalfStorage_newWithAllocator: [THHalfStoragePtr, [
+    ref.types.long,
+    THAllocatorPtr,
+    voidPtr,
+  ]],
+  THHalfStorage_newWithDataAndAllocator: [THHalfStoragePtr, [
+    THHalfPtr,
+    ref.types.long,
+    THAllocatorPtr,
+    voidPtr,
+  ]],
+  THHalfStorage_setFlag: [ref.types.void, [
+    THHalfStoragePtr,
+    ref.types.char,
+  ]],
+  THHalfStorage_clearFlag: [ref.types.void, [
+    THHalfStoragePtr,
+    ref.types.char,
+  ]],
+  THHalfStorage_retain: [ref.types.void, [
+    THHalfStoragePtr,
+  ]],
+  THHalfStorage_swap: [ref.types.void, [
+    THHalfStoragePtr,
+    THHalfStoragePtr,
+  ]],
+  THHalfStorage_free: [ref.types.void, [
+    THHalfStoragePtr,
+  ]],
+  THHalfStorage_resize: [ref.types.void, [
+    THHalfStoragePtr,
+    ref.types.long,
+  ]],
+  THHalfStorage_fill: [ref.types.void, [
+    THHalfStoragePtr,
+    THHalf,
+  ]],
   THByteStorage_rawCopy: [ref.types.void, [
     THByteStoragePtr,
     ref.refType(ref.types.uchar),
@@ -1766,6 +1847,10 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     voidPtr,
   ]],
   THByteStorage_copyDouble: [ref.types.void, [
+    THByteStoragePtr,
+    voidPtr,
+  ]],
+  THByteStorage_copyHalf: [ref.types.void, [
     THByteStoragePtr,
     voidPtr,
   ]],
@@ -1805,6 +1890,10 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     THCharStoragePtr,
     voidPtr,
   ]],
+  THCharStorage_copyHalf: [ref.types.void, [
+    THCharStoragePtr,
+    voidPtr,
+  ]],
   THShortStorage_rawCopy: [ref.types.void, [
     THShortStoragePtr,
     ref.refType(ref.types.short),
@@ -1838,6 +1927,10 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     voidPtr,
   ]],
   THShortStorage_copyDouble: [ref.types.void, [
+    THShortStoragePtr,
+    voidPtr,
+  ]],
+  THShortStorage_copyHalf: [ref.types.void, [
     THShortStoragePtr,
     voidPtr,
   ]],
@@ -1877,6 +1970,10 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     THIntStoragePtr,
     voidPtr,
   ]],
+  THIntStorage_copyHalf: [ref.types.void, [
+    THIntStoragePtr,
+    voidPtr,
+  ]],
   THLongStorage_rawCopy: [ref.types.void, [
     THLongStoragePtr,
     ref.refType(ref.types.long),
@@ -1910,6 +2007,10 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     voidPtr,
   ]],
   THLongStorage_copyDouble: [ref.types.void, [
+    THLongStoragePtr,
+    voidPtr,
+  ]],
+  THLongStorage_copyHalf: [ref.types.void, [
     THLongStoragePtr,
     voidPtr,
   ]],
@@ -1949,6 +2050,10 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     THFloatStoragePtr,
     voidPtr,
   ]],
+  THFloatStorage_copyHalf: [ref.types.void, [
+    THFloatStoragePtr,
+    voidPtr,
+  ]],
   THDoubleStorage_rawCopy: [ref.types.void, [
     THDoubleStoragePtr,
     ref.refType(ref.types.double),
@@ -1983,6 +2088,50 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
   ]],
   THDoubleStorage_copyDouble: [ref.types.void, [
     THDoubleStoragePtr,
+    voidPtr,
+  ]],
+  THDoubleStorage_copyHalf: [ref.types.void, [
+    THDoubleStoragePtr,
+    voidPtr,
+  ]],
+  THHalfStorage_rawCopy: [ref.types.void, [
+    THHalfStoragePtr,
+    THHalfPtr,
+  ]],
+  THHalfStorage_copy: [ref.types.void, [
+    THHalfStoragePtr,
+    THHalfStoragePtr,
+  ]],
+  THHalfStorage_copyByte: [ref.types.void, [
+    THHalfStoragePtr,
+    voidPtr,
+  ]],
+  THHalfStorage_copyChar: [ref.types.void, [
+    THHalfStoragePtr,
+    voidPtr,
+  ]],
+  THHalfStorage_copyShort: [ref.types.void, [
+    THHalfStoragePtr,
+    voidPtr,
+  ]],
+  THHalfStorage_copyInt: [ref.types.void, [
+    THHalfStoragePtr,
+    voidPtr,
+  ]],
+  THHalfStorage_copyLong: [ref.types.void, [
+    THHalfStoragePtr,
+    voidPtr,
+  ]],
+  THHalfStorage_copyFloat: [ref.types.void, [
+    THHalfStoragePtr,
+    voidPtr,
+  ]],
+  THHalfStorage_copyDouble: [ref.types.void, [
+    THHalfStoragePtr,
+    voidPtr,
+  ]],
+  THHalfStorage_copyHalf: [ref.types.void, [
+    THHalfStoragePtr,
     voidPtr,
   ]],
   THFloatTensor_fill: [ref.types.void, [
@@ -2634,6 +2783,13 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
     ref.types.float,
   ]],
   THFloatTensor_histc: [ref.types.void, [
+    THFloatTensorPtr,
+    THFloatTensorPtr,
+    ref.types.long,
+    ref.types.float,
+    ref.types.float,
+  ]],
+  THFloatTensor_bhistc: [ref.types.void, [
     THFloatTensorPtr,
     THFloatTensorPtr,
     ref.types.long,
@@ -3304,399 +3460,6 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
   THFloatTensor_newWithTensor: [THFloatTensorPtr, [
     THFloatTensorPtr,
   ]],
-  THFloatTensor_dx_neg: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_add_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_acc_add_f1: [ref.types.float, [
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_add_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_acc_add_f2: [ref.types.float, [
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_sub_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_acc_sub_f1: [ref.types.float, [
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_sub_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_acc_sub_f2: [ref.types.float, [
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_mul_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_const_mul_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_acc_mul_f1: [ref.types.float, [
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_mul_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_const_mul_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_acc_mul_f2: [ref.types.float, [
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_div_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_const_div_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_acc_div_f1: [ref.types.float, [
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_div_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_const_div_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_acc_div_f2: [ref.types.float, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_sqrt: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_exp: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_log: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_pow_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_const_pow_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_acc_pow_f1: [ref.types.float, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_pow_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_const_pow_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_acc_pow_f2: [ref.types.float, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_sin: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_cos: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_tan: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_asin: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_acos: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_atan: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_atan2_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_const_atan2_f1: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_acc_atan2_f1: [ref.types.float, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_atan2_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_const_atan2_f2: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_acc_atan2_f2: [ref.types.float, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    ref.types.float,
-  ]],
-  THFloatTensor_dx_sinh: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_cosh: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_tanh: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_asinh: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_acosh: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_atanh: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_sigmoid: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_dx_abs: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-    THFloatTensorPtr,
-  ]],
-  THFloatTensor_fctapply: [ref.types.void, [
-    THFloatTensorPtr,
-    THFloatTensor_jscallback,
-  ]],
-  THByteTensor_newWithSize: [THByteTensorPtr, [
-    THLongStoragePtr,
-    THLongStoragePtr,
-  ]],
-  THByteTensor_newWithSize1d: [THByteTensorPtr, [
-    ref.types.long,
-  ]],
-  THByteTensor_newWithSize2d: [THByteTensorPtr, [
-    ref.types.long,
-    ref.types.long,
-  ]],
-  THByteTensor_newWithSize3d: [THByteTensorPtr, [
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-  ]],
-  THByteTensor_newWithSize4d: [THByteTensorPtr, [
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-  ]],
-  THByteTensor_dot: [ref.types.long, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-  ]],
-  THByteTensor_minall: [ref.types.uchar, [
-    THByteTensorPtr,
-  ]],
-  THByteTensor_maxall: [ref.types.uchar, [
-    THByteTensorPtr,
-  ]],
-  THByteTensor_sumall: [ref.types.long, [
-    THByteTensorPtr,
-  ]],
-  THByteTensor_prodall: [ref.types.long, [
-    THByteTensorPtr,
-  ]],
-  // THByteTensor_neg: [ref.types.void, [
-  //   THByteTensorPtr,
-  //   THByteTensorPtr,
-  // ]],
-  THByteTensor_ltTensor: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    THByteTensorPtr,
-  ]],
-  THByteTensor_leTensor: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    THByteTensorPtr,
-  ]],
-  THByteTensor_gtTensor: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    THByteTensorPtr,
-  ]],
-  THByteTensor_geTensor: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    THByteTensorPtr,
-  ]],
-  THByteTensor_neTensor: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    THByteTensorPtr,
-  ]],
-  THByteTensor_eqTensor: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    THByteTensorPtr,
-  ]],
-  THByteTensor_add: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    ref.types.uchar,
-  ]],
-  THByteTensor_sub: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    ref.types.uchar,
-  ]],
-  THByteTensor_mul: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    ref.types.uchar,
-  ]],
-  THByteTensor_div: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    ref.types.uchar,
-  ]],
-  THByteTensor_fmod: [ref.types.void, [
-    THByteTensorPtr,
-    THByteTensorPtr,
-    ref.types.uchar,
-  ]],
-  THByteTensor_set1d: [ref.types.void, [
-    THByteTensorPtr,
-    ref.types.long,
-    ref.types.uchar,
-  ]],
-  THByteTensor_set2d: [ref.types.void, [
-    THByteTensorPtr,
-    ref.types.long,
-    ref.types.long,
-    ref.types.uchar,
-  ]],
-  THByteTensor_set3d: [ref.types.void, [
-    THByteTensorPtr,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.uchar,
-  ]],
-  THByteTensor_set4d: [ref.types.void, [
-    THByteTensorPtr,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.uchar,
-  ]],
-  THByteTensor_get1d: [ref.types.uchar, [
-    THByteTensorPtr,
-    ref.types.long,
-  ]],
-  THByteTensor_get2d: [ref.types.uchar, [
-    THByteTensorPtr,
-    ref.types.long,
-    ref.types.long,
-  ]],
-  THByteTensor_get3d: [ref.types.uchar, [
-    THByteTensorPtr,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-  ]],
-  THByteTensor_get4d: [ref.types.uchar, [
-    THByteTensorPtr,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-    ref.types.long,
-  ]],
   THFile_isOpened: [ref.types.int32, [
     THFile,
   ]],
@@ -3922,6 +3685,31 @@ exports.TH = new FFI.Library('/Users/jpchen/jstorch/torch.js/libTH/build/libmTH'
   THFile_writeStringRaw: [ref.types.ulong, [
     THFilePtr,
     ref.types.CString,
+    ref.types.ulong,
+  ]],
+  THFile_readHalfScalar: [THHalf, [
+    THFilePtr,
+  ]],
+  THFile_writeHalfScalar: [ref.types.void, [
+    THFilePtr,
+    THHalf,
+  ]],
+  THFile_readHalf: [ref.types.ulong, [
+    THFilePtr,
+    THHalfStoragePtr,
+  ]],
+  THFile_writeHalf: [ref.types.ulong, [
+    THFilePtr,
+    THHalfStoragePtr,
+  ]],
+  THFile_readHalfRaw: [ref.types.ulong, [
+    THFilePtr,
+    THHalfPtr,
+    ref.types.ulong,
+  ]],
+  THFile_writeHalfRaw: [ref.types.ulong, [
+    THFilePtr,
+    THHalfPtr,
     ref.types.ulong,
   ]],
   THFile_synchronize: [ref.types.void, [
